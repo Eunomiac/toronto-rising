@@ -1,0 +1,393 @@
+// Import font definitions
+@import "font-defs";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px; // Base font size - rem units are relative to this
+  --text-shadow-base:
+    2px 2px 3px #000,
+    2px 2px 3px #000,
+    2px 2px 3px #000,
+    2px 2px 3px #000,
+    2px 2px 3px #000,
+    0px 0px 6px #000,
+    0px 0px 6px #000,
+    0px 0px 6px #000,
+    0px 0px 6px #000,
+    0px 0px 6px #000,
+    0px 0px 6px #000,
+    0px 0px 6px #000,
+    0px 0px 6px #000,
+    0px 0px 6px #000,
+    0px 0px 6px #000,
+    0px 0px 6px #000,
+    0px 0px 6px #000,
+    0px 0px 6px #000;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+  filter: brightness(0.25);
+}
+
+body {
+  font-family: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  text-shadow: var(--text-shadow-base);
+
+  #app {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    .rumor-container {
+      max-width: 800px;
+      width: 90%;
+      padding: 2rem;
+      text-align: center;
+      opacity: 0;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &.position-1 {
+        bottom: 10%;
+        left: 0%;
+      }
+
+      &.position-2 {
+        bottom: 20%;
+        left: 20%;
+      }
+
+      &.position-3 {
+        bottom: 30%;
+        left: 40%;
+      }
+
+      .rumor-surtitle,
+      .rumor-subtitle {
+        white-space: nowrap;
+      }
+
+      .rumor-surtitle {
+        color: #FF0000;
+        font-size: 1.75rem;
+        margin-bottom: -10px;
+        font-weight: bold;
+
+        &.blood-god {
+          font-family: Quadrata;
+          text-transform: lowercase;
+          font-variant: small-caps;
+          letter-spacing: 1px;
+        }
+
+        &.white-text {
+          color: #e0e0e0;
+
+          text-transform: lowercase;
+          font-variant: small-caps;
+          margin-bottom: -15px;
+          // font-weight: bold;
+          font-size: 2.5rem;
+
+          +.rumor-title {
+            font-size: 3.5rem;
+          }
+        }
+
+        &.of-cities {
+          margin-left: -300px;
+          margin-bottom: -10px;
+        }
+      }
+
+      .rumor-subtitle {
+        color: #FF0000;
+        font-size: 1.25rem;
+        margin-top: 5px;
+        font-family: Principaute;
+
+        &.date-line {
+          color: #FFFFFF;
+          margin: 0;
+          margin-bottom: -10px;
+          font-size: 2rem;
+
+          .word {
+            transform: translate(0, 3px) !important;
+          }
+
+          font-family: SchaftstiefelKaputt;
+          margin-top: -10px;
+        }
+
+        &.mechanic-subtitle {
+          color: #FFFFFF;
+          margin: 0;
+          margin-bottom: -5px;
+          font-size: 2rem;
+          font-family: Cinzel;
+          text-transform: lowercase;
+          font-variant: small-caps;
+          margin-top: -10px;
+        }
+
+        &.clan-subtitle {
+          margin: 0;
+          margin-bottom: -5px;
+          font-size: 1.75rem;
+          font-family: 'Index 29';
+        }
+      }
+
+
+      // font-family: AnaEve;
+      // font-family: Aquifer;
+      // font-family: Brandomi;
+      // font-family: 'Caslon Antique';
+      // font-family: Cinzel;
+      // font-family: 'Cinzel Decorative';
+      // font-family: Cock;
+      // font-family: 'Index 29';
+      // font-family: 'Monteiro Lobato';
+      // font-family: Principaute;
+      // font-family: Quadrata;
+      // font-family: SchaftstiefelKaputt;
+      // font-family: 'VTKS Expert';
+      // font-family: 'Worn Manuscript';
+
+      .rumor-title {
+        font-family: "Percolator Expert", sans-serif;
+        font-size: 2.5rem;
+        font-weight: normal;
+        color: #ff0000;
+        line-height: 1;
+
+        &.blood-god {
+          width: 70%;
+          padding: 0px 50px;
+          color: white;
+          text-shadow: var(--text-shadow-base);
+          line-height: 0.75;
+          position: relative;
+          top: 5px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+
+          // Background gradient on pseudo-element for opacity animation
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent 20%, red 40%, red 60%, transparent 80%);
+            opacity: var(--bg-opacity, 0);
+            z-index: -1;
+            pointer-events: none;
+          }
+
+          .word {
+            top: -2px;
+            position: relative;
+          }
+        }
+      }
+
+      .rumor-content {
+        font-size: 1.25rem;
+        line-height: 1.25;
+        font-weight: bold;
+        color: #a8a8a8;
+        text-align: center;
+        text-wrap: balance;
+        text-justify: inter-word;
+        margin-top: 10px;
+        position: relative;
+
+        .body-emphasis {
+          font-weight: bold;
+          color: #ffffff;
+        }
+
+        p {
+          margin-bottom: 1rem;
+        }
+
+        .line {
+          display: block;
+          margin-bottom: 0.75rem;
+        }
+
+        &.old-text {
+          // font-family: 'Aquifer';
+          font-weight: normal;
+
+          // font-family: AnaEve;
+          // font-family: Aquifer;
+          // font-family: Brandomi;
+          // font-family: 'Caslon Antique';
+          // font-family: Cinzel;
+          // font-family: 'Cinzel Decorative';
+          // font-family: Cock;
+          margin-top: 0px;
+          width: 150%;
+          // font-size: 1.5rem;
+          font-size: 1.5rem;
+          // line-height: 1;
+          // font-family: 'Index 29';
+          font-family: 'Monteiro Lobato';
+          // font-family: Principaute;
+          // font-family: Quadrata;
+          // font-family: SchaftstiefelKaputt;
+          // font-family: 'VTKS Expert';
+          // font-family: 'Worn Manuscript';
+        }
+
+        .content-image {
+          position: absolute;
+          z-index: -2;
+          transform: translate(-50%, -100%);
+          width: 30%;
+
+          &.image-wide {
+            width: 50%;
+          }
+
+          &.image-narrow {
+            width: 20%;
+          }
+
+          &.image-very-narrow {
+            width: 10%;
+          }
+        }
+      }
+
+      .word {
+        display: inline-block;
+      }
+
+    }
+  }
+}
+
+.pause-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgba(196, 30, 58, 0.8);
+  border: 2px solid rgba(196, 30, 58, 1);
+  color: #e0e0e0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    background: rgba(196, 30, 58, 1);
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(196, 30, 58, 0.6);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &.paused {
+    background: rgba(40, 160, 40, 0.8);
+    border-color: rgba(40, 160, 40, 1);
+
+    &:hover {
+      background: rgba(40, 160, 40, 1);
+      box-shadow: 0 6px 16px rgba(40, 160, 40, 0.6);
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+.debug-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 6rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgba(100, 100, 100, 0.8);
+  border: 2px solid rgba(100, 100, 100, 1);
+  color: #e0e0e0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    background: rgba(100, 100, 100, 1);
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(100, 100, 100, 0.6);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &.active {
+    background: rgba(255, 165, 0, 0.8);
+    border-color: rgba(255, 165, 0, 1);
+
+    &:hover {
+      background: rgba(255, 165, 0, 1);
+      box-shadow: 0 6px 16px rgba(255, 165, 0, 0.6);
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    bottom: 1.5rem;
+    right: 5rem;
+  }
+}

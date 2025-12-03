@@ -1,0 +1,292 @@
+/**
+ * Font Face Definitions
+ * Fonts are located in /public/assets/fonts/
+ */
+
+// Cormorant Garamond - Regular
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/assets/fonts/Cormorant Garamond Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Cormorant Garamond - Light
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/assets/fonts/Cormorant Garamond Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Cormorant Garamond - Light Italic
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/assets/fonts/Cormorant Garamond Light Italic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+// Cormorant Garamond - Medium
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/assets/fonts/Cormorant Garamond Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Cormorant Garamond - Medium Italic
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/assets/fonts/Cormorant Garamond Medium Italic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+// Cormorant Garamond - SemiBold
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/assets/fonts/Cormorant Garamond SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Cormorant Garamond - SemiBold Italic
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/assets/fonts/Cormorant Garamond SemiBold Italic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+// Cormorant Garamond - Bold
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/assets/fonts/Cormorant Garamond Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Cormorant Garamond - Bold Italic
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/assets/fonts/Cormorant Garamond Bold Italic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+// Cormorant Garamond - Italic (Regular weight)
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/assets/fonts/Cormorant Garamond Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+// Percolator Expert
+@font-face {
+  font-family: "Percolator Expert";
+  src: url("/assets/fonts/Percolator Expert.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// AnaEve
+@font-face {
+  font-family: "AnaEve";
+  src: url("/assets/fonts/AnaEve.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Aquifer
+@font-face {
+  font-family: "Aquifer";
+  src: url("/assets/fonts/Aquifer.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Brandomi
+@font-face {
+  font-family: "Brandomi";
+  src: url("/assets/fonts/Brandomi.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Caslon Antique - Regular
+@font-face {
+  font-family: "Caslon Antique";
+  src: url("/assets/fonts/Caslon Antique.TTF") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Caslon Antique - Italic
+@font-face {
+  font-family: "Caslon Antique";
+  src: url("/assets/fonts/Caslon Antique Italic.TTF") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+// Cinzel - Regular
+@font-face {
+  font-family: "Cinzel";
+  src: url("/assets/fonts/Cinzel.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Cinzel - Bold
+@font-face {
+  font-family: "Cinzel";
+  src: url("/assets/fonts/Cinzel Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Cinzel - Black
+@font-face {
+  font-family: "Cinzel";
+  src: url("/assets/fonts/Cinzel Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Cinzel Decorative - Regular
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url("/assets/fonts/Cinzel Decorative.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Cinzel Decorative - Bold
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url("/assets/fonts/Cinzel Decorative Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Cinzel Decorative - Black
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url("/assets/fonts/Cinzel Decorative Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Cock - Regular
+@font-face {
+  font-family: "Cock";
+  src: url("/assets/fonts/Cock.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Cock - Bold
+@font-face {
+  font-family: "Cock";
+  src: url("/assets/fonts/Cock Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Cock - Italic
+@font-face {
+  font-family: "Cock";
+  src: url("/assets/fonts/Cock Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+// Index 29
+@font-face {
+  font-family: "Index 29";
+  src: url("/assets/fonts/Index 29.TTF") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Monteiro Lobato
+@font-face {
+  font-family: "Monteiro Lobato";
+  src: url("/assets/fonts/Monteiro Lobato.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Principaute
+@font-face {
+  font-family: "Principaute";
+  src: url("/assets/fonts/Principaute.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Quadrata
+@font-face {
+  font-family: "Quadrata";
+  src: url("/assets/fonts/Quadrata.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// SchaftstiefelKaputt
+@font-face {
+  font-family: "SchaftstiefelKaputt";
+  src: url("/assets/fonts/SchaftstiefelKaputt.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// VTKS Expert
+@font-face {
+  font-family: "VTKS Expert";
+  src: url("/assets/fonts/VTKS Expert.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Worn Manuscript
+@font-face {
+  font-family: "Worn Manuscript";
+  src: url("/assets/fonts/Worn Manuscript.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

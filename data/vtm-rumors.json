@@ -1,0 +1,1146 @@
+{
+
+  "The Fall of the Prime Chantry": {
+    "surtitle": "Vienna",
+    "content": "The Tremere's fabled Prime Chantry in Vienna survived religious wars, Nazi looters, and Sabbat crusades, only to be erased by a modern drone strike. The Clan of Warlocks publicly blames the Second Inquisition, but hushed reports suggest the blast coincided suspiciously with internal Thaumaturgic experiments gone catastrophically wrong.",
+    "subtitle": "2008",
+    "subtitleClass": "date-line",
+    "surtitleClass": "location",
+    "images": [
+      {
+        "src": "clanTremereGold.webp",
+        "class": "image-left animate-slide-down"
+      }
+    ]
+  },
+  "The Sacking of Carthage": {
+    "content": "The ancient city of Carthage was Clan Brujah's greatest achievement: strong, prosperous, idealistic, and entirely theirs... until the armies of Ventrue-held Rome destroyed it utterly, salting the earth so Carthage could never rise again. Clan Brujah has never forgotten the blood on Clan Ventrue's hands: The two clans have despised each other ever since.",
+    "subtitle": "146 BCE",
+    "subtitleClass": "date-line"
+  },
+  "The Belle Époque": {
+    "content": "A golden age of art and industry spread a dazzling veneer over underlying rot. Elders of the world's greatest cities &mdash; Paris, London, New York &mdash; consolidated power by wedding old aristocratic titles to new industrial wealth, feasting in opulent salons while the working masses (and neonate vampires) crowded into slums and seethed in back-alley wars. In Paris, Camarilla elders and young “Bohemian” Kindred maintained a fragile accord born of the Revolution, even as jingoism and inequality festered &mdash; the final twilight before a coming storm.",
+    "subtitle": "1871 &minus; 1914",
+    "subtitleClass": "date-line"
+  },
+  "The Prophecy of Gehenna": {
+    "content": "\"You will know these last times by the Time of Thin Blood, which will mark vampires that cannot beget. You will know them by the Clanless, who will come to rule.\" <span style='color: red'>— The Book of Nod</span>",
+    "contentClass": "old-text"
+  },
+
+  "Haunted Hinterlands": {
+    "surtitle": "Northern Canada",
+    "content": "Beyond the lights of the southern cities, Canada stretches into vast forests, tundra, and isolated mining towns. Kindred know that the far north does not belong to the Camarilla, the Sabbat, or the Anarchs, but to werewolves, wights, and worse things that fear no Kindred's fangs.",
+    "surtitleClass": "location"
+  },
+
+  "PATH": {
+    "surtitle": "Toronto",
+    "content": "Toronto's PATH network weaves beneath the downtown core in a labyrinth of shops and corridors that never see the sun. The largest subterranean commercial complex in the world, Kindred gossip suggests that more deals between ancillae are struck in empty food courts after closing than in all the official Elysia above.",
+    "surtitleClass": "location"
+  },
+  "The Baron": {
+    "content": "A baron is the Anarch Movement's equivalent to a Camarilla prince: the highest Anarch authority in a city. As the Anarchs believe in a system that awards merit, barons tend to vary in age and experience far more than princes, who &mdash; at least before the Beckoning &mdash; were almost exclusively elders. Two mysterious Kindred, known collectively as **the Good Doctors**, currently share the title of Baron of Toronto.",
+    "images": [
+      {
+        "src": "sectAnarchsRed.webp",
+        "class": "image-center animate-center image-narrow"
+      }
+    ]
+  },
+  "Lasombra & Ventrue": {
+    "surtitle": "Clan Rivalries",
+    "content": "The Ventrue and the Lasombra are as alike as they are polar opposites: As the Ventrue rule the Camarilla, the Lasombra once ruled the Sabbat. Both Embrace the capable and the ambitious; both prize power above all else; and both consider themselves the true masters of Dominate. Their hatred for each other is matched only by their grudging respect for their rival kings among the Kindred.",
+    "surtitleClass": "clan-rivalries",
+    "images": [
+      {
+        "src": "clanLasombraGold.webp",
+        "class": "image-left animate-slide-right"
+      },
+      {
+        "src": "clanVentrueGold.webp",
+        "class": "image-right animate-slide-left"
+      }
+    ]
+  },
+  "Brujah & Ventrue": {
+    "surtitle": "Clan Rivalries",
+    "content": "When Ventrue-controlled Rome sacked Carthage, the greatest of Clan Brujah's achievements, they sparked a rivalry whose age is only surpassed by the feud between Clan Ravnos and Clan Gangrel. With Clan Ventrue embodying the status quo and Clan Brujah rebelling against the establishment, their mutual disdain has found no shortage of fuel over the centuries.",
+    "surtitleClass": "clan-rivalries",
+    "images": [
+      {
+        "src": "clanBrujahRed.webp",
+        "class": "image-left animate-slide-right"
+      },
+      {
+        "src": "clanVentrueGold.webp",
+        "class": "image-right animate-slide-left"
+      }
+    ]
+  },
+  "Tremere & Tzimisce": {
+    "surtitle": "Clan Rivalries",
+    "content": "It wasn't Tremere who unlocked the secrets of vampiric immortality, but his disciple Goratrix. His methods were barbaric: he experimented on hundreds of native Tzimisce, ultimately starting a war between Clan Tzimisce and the newly-formed Clan Tremere. Though the Omen War has long ended, the hatred between the two clans persists undimmed into the modern nights.",
+    "surtitleClass": "clan-rivalries",
+    "images": [
+      {
+        "src": "clanTremereGold.webp",
+        "class": "image-left animate-slide-right"
+      },
+      {
+        "src": "clanTzimisceRed.webp",
+        "class": "image-right animate-slide-left"
+      }
+    ]
+  },
+  "Banu Haqim & Tremere": {
+    "surtitle": "Clan Rivalries",
+    "content": "In 1493, at the signing of the Convention of Thorns that founded the Camarilla, the Assamites were widely feared for their wanton commission of diablerie. So Clan Tremere placed a curse on the entire bloodline, preventing them from drinking Kindred Blood. Though the curse was recently broken, the Assamites (now the Banu Haqim) have yet to forgive Clan Tremere's interference.",
+    "surtitleClass": "clan-rivalries",
+    "images": [
+      {
+        "src": "clanBanuHaqimGold.webp",
+        "class": "image-left animate-slide-right"
+      },
+      {
+        "src": "clanTremereGold.webp",
+        "class": "image-right animate-slide-left"
+      }
+    ]
+  },
+  "Gangrel & Ravnos": {
+    "surtitle": "Clan Rivalries",
+    "content": "When the Gangrel Antediluvian Ennoia murdered a favored childe of the Ravnos Antediluvian Zapathasura, Zapathasura cursed Ennoia as a beast, placing upon her what would become the clan bane of all Gangrel. Thus began the oldest rivalry between clans, a feud known to every Gangrel and to every Ravnos, which continues to rage unchecked in modern nights.",
+    "surtitleClass": "clan-rivalries",
+    "images": [
+      {
+        "src": "clanGangrelRed.webp",
+        "class": "image-left animate-slide-right"
+      },
+      {
+        "src": "clanRavnosRed.webp",
+        "class": "image-right animate-slide-left"
+      }
+    ]
+  },
+  "Nosferatu & Toreador": {
+    "surtitle": "Clan Rivalries",
+    "content": "Throughout history, Clan Toreador has been behind a cavalcade of subtle machinations against Clan Nosferatu, ostracizing them from \"polite\" Kindred society and resigning them to the slums and sewers. For most clans, these acts would be unforgivable, but the Nosferatu are subtle and indisposed to grudges. Nevertheless, the Toreador know to expect a very steep price to secure Nosferatu services.",
+    "surtitleClass": "clan-rivalries",
+    "images": [
+      {
+        "src": "clanNosferatuGold.webp",
+        "class": "image-left animate-slide-right"
+      },
+      {
+        "src": "clanToreadorGold.webp",
+        "class": "image-right animate-slide-left"
+      }
+    ]
+  },
+  "Brujah & Tremere": {
+    "surtitle": "Clan Rivalries",
+    "content": "The Brujah call the Tremere usurpers, blood magicians who butchered the Salubri and sold out Carthage. The Tremere, in turn, see the Brujah as dangerously sentimental anarchs who never learned from their failures. Every time a Brujah and a Tremere share a city, someone eventually tries to reenact the sack of Carthage on a smaller scale.",
+    "surtitleClass": "clan-rivalries",
+    "images": [
+      {
+        "src": "clanBrujahRed.webp",
+        "class": "image-left animate-slide-right"
+      },
+      {
+        "src": "clanTremereGold.webp",
+        "class": "image-right animate-slide-left"
+      }
+    ]
+  },
+  "Banu Haqim & Ministry": {
+    "surtitle": "Clan Rivalries",
+    "content": "In the old nights, the Warriors of Haqim hunted the followers of Set as corrupters and slavers, while the serpents claimed to free mortals from hypocrisy and fear. Even now, in a supposedly enlightened age, conflicts between the Ministry and the Banu Haqim often end with one side missing hearts and the other missing temples.",
+    "surtitleClass": "clan-rivalries",
+    "images": [
+      {
+        "src": "clanBanuHaqimGold.webp",
+        "class": "image-left animate-slide-right"
+      },
+      {
+        "src": "clanMinistryRed.webp",
+        "class": "image-right animate-slide-left"
+      }
+    ]
+  },
+  "the Hecata & Everyone": {
+    "surtitle": "Sect Rivalries",
+    "content": "The Hecata are the stitched-together heirs of necromancers, usurers, and would-be god-eaters, and almost every other clan has a reason to hate them. Some warn that when the Clans of Death come calling, you are already lost; others insist that keeping a Hecata on retainer is like sleeping with your own executioner.",
+    "surtitleClass": "clan-rivalries",
+    "images": [
+      {
+        "src": "sectHecataWhite.webp",
+        "class": "image-center animate-center"
+      }
+    ]
+  },
+  "Lasombra & Tremere": {
+    "surtitle": "Clan Rivalries",
+    "content": "The Lasombra consider their control of faith and shadow to be a birthright; the Tremere consider every mystery a problem to be dissected and codified. Whenever these two clans contest influence over churches, occult societies, or universities, the resulting shadow wars leave mortal institutions strangely hollowed out and spiritually burned.",
+    "surtitleClass": "clan-rivalries",
+    "images": [
+      {
+        "src": "clanLasombraGold.webp",
+        "class": "image-left animate-slide-right"
+      },
+      {
+        "src": "clanTremereGold.webp",
+        "class": "image-right animate-slide-left"
+      }
+    ]
+  },
+  "Giovanni & Harbingers": {
+    "surtitle": "Clan Rivalries",
+    "content": "The Harbingers of Ashur claim to be Cappadocians who clawed their way out of the lands of the dead purely to ruin the Giovanni; the Venetian necromancers call that a fairy tale, but Giovanni assets and bloodlines have a habit of collapsing without mortal explanation whenever a skull-masked stranger passes through a city.",
+    "surtitleClass": "clan-rivalries",
+    "images": [
+      {
+        "src": "clanGiovanniWhite.webp",
+        "class": "image-left animate-slide-right"
+      },
+      {
+        "src": "clanHarbingerWhite.webp",
+        "class": "image-right animate-slide-left"
+      }
+    ]
+  },
+  "The Week of Nightmares": {
+    "content": "During what would be seen by many as the start of Gehenna, the Ravnos Antediluvian Zapathasura awakened from torpor and, after a long and bloody conflict, was defeated by a powerful alliance of vampires, werewolves and mages. At the moment of his death, Zapathasura unleashed a psychic scream that drove every Ravnos into a cannibalistic frenzy, nearly destroying the entire clan in a single week.",
+    "subtitle": "1999",
+    "subtitleClass": "date-line",
+    "images": [
+      {
+        "src": "clanRavnosIvory.webp",
+        "class": "image-center animate-slide-down"
+      }
+    ]
+  },
+  "Anarch Free State: Redux": {
+    "content": "Devastating hunter activity drove the Camarilla out of Los Angeles once again, and the local Anarchs seized the moment to re-declare the Anarch Free State. Whether this resurgence is a lasting political reality or just one more swing in the Jyhad's pendulum is hotly debated in Elysia far from California.",
+    "subtitle": "2020",
+    "subtitleClass": "date-line",
+    "images": [
+      {
+        "src": "sectAnarchsRed.webp",
+        "class": "image-center animate-slide-down image-narrow"
+      }
+    ]
+  },
+  "The Anarch Free State": {
+    "content": "During the Second Anarch Revolt, Los Angeles Anarchs led by Jeremy MacNeil famously overthrew their Camarilla prince and declared a so-called \"Anarch Free State\" across California. For decades, the Free State stood as a bold experiment in Kindred self-rule without elders. While internal strife and the Second Inquisition have since weakened it, many young Anarchs worldwide still look to LA's legend as proof that vampire society can be remade.",
+    "subtitle": "1944",
+    "subtitleClass": "date-line",
+    "images": [
+      {
+        "src": "sectAnarchsRed.webp",
+        "class": "image-center animate-slide-down image-narrow"
+      }
+    ]
+  },
+  "The Dead Lions": {
+    "content": "Within the Camarilla, a faction known as the Dead Lions quietly argues that hiding from the Gehenna War is suicide. Its members advocate sending carefully chosen elders, coteries, or even entire cities to the front lines in the Middle East, to win favor with whatever ancient powers awaken there.",
+    "images": [
+      {
+        "src": "sectCamarillaGold.webp",
+        "class": "image-center animate-slide-down image-narrow"
+      }
+    ]
+  },
+  "The Defection of Clan Lasombra": {
+    "content": "To secure their seat at the Camarilla table, the Lasombra of the Sabbat shocked everyone by offering up the oldest and most notorious of their members to execution, sacrificing their own elders and accepting blood bonds in exchange for acceptance. Whether this \"Sacrifice\" marks true reform or a long-con by the Magisters is a question that keeps princes awake during the day.",
+    "subtitle": "2018",
+    "subtitleClass": "date-line",
+    "images": [
+      {
+        "src": "clanLasombraGold.webp",
+        "class": "image-center animate-slide-down"
+      }
+    ]
+  },
+  "Terms of Sacrifice": {
+    "content": "Unofficial summaries of the Lasombra's deal for Camarilla membership claim that only a handful of Magisters are allowed in any given domain; that each must give up an elder of their clan for execution; that all must submit to the Blood Bond; and that no Lasombra may hold any title for decades yet to come. The clans who bled to stop them from joining the Ivory Tower find this arrangement too lenient by far.",
+    "subtitle": "2018",
+    "subtitleClass": "date-line",
+    "images": [
+      {
+        "src": "clanLasombraGold.webp",
+        "class": "image-center animate-slide-down"
+      }
+    ]
+  },
+  "Project FIRSTLIGHT": {
+    "content": "Project FIRSTLIGHT is the codename mortals use for a joint intelligence operation dedicated to tracking and exterminating \"blankbodies\" across the globe. Camarilla whispers insist the Ivory Tower itself fed the project just enough Sabbat names to turn the hunters away from its own elders... a strategy that backfired with catastrophic consequences.",
+    "images": [
+      {
+        "src": "secondInquisitionIvory.webp",
+        "class": "image-center animate-center image-narrow"
+      }
+    ]
+  },
+  "The Second Inquisition": {
+    "content": "The Second Inquisition is the name given to the current mortal pogrom against the Kindred: a global effort by covert government agencies aided by a secret militant wing of the Vatican to erase vampires from existence. It began when a Camarilla plot to turn mortal authorities against their enemies backfired, revealing the existence of the Kindred to governments around the world.",
+    "images": [
+      {
+        "src": "secondInquisitionIvory.webp",
+        "class": "image-center animate-center image-narrow"
+      }
+    ]
+  },
+  "Autarkis": {
+    "content": "An autarkis is a vampire who remains outside and apart from the larger vampire society of a given city, one who refuses to acknowledge the claim of a prince, baron, sect, clan, or other such entity. Autarkes tend to be old and powerful, to successfully flout the authority of the ruling sect.",
+    "images": [
+      {
+        "src": "sectIndependentIvory.webp",
+        "class": "image-center animate-center image-narrow"
+      }
+    ]
+  },
+  "The Inconnu": {
+    "content": "The Inconnu are an ancient and secretive sect of vampires, about whom virtually nothing is known. The only visible facet of the sect seems to be the Monitors, who watch vampiric events while avoiding direct interference.",
+    "images": [
+      {
+        "src": "sectIndependentIvory.webp",
+        "class": "image-center animate-center image-narrow"
+      }
+    ]
+  },
+  "Ghouls": {
+    "content": "Feeding a mortal your blood transforms them into a ghoul. They will gain a measure of your vampiric power while retaining their humanity, and their addiction to your blood secures their loyalty.",
+    "images": [
+      {
+        "src": "ghoulIvory.webp",
+        "class": "image-center animate-center image-very-narrow"
+      }
+    ]
+  },
+  "The Sabbat": {
+    "content": "The Sabbat is a loose organization of Kindred who reject the Traditions and the assumed humanity of the Camarilla, their bitter enemies. Though antitribu of any clan are welcome, Clans Lasombra and Tzimisce are the traditional fists and faith of the Sabbat — though in recent nights, the majority of the Clan of Night has defected to the Camarilla, to rule side-by-side with Clan Ventrue.",
+    "images": [
+      {
+        "src": "sectSabbatPurple.webp",
+        "class": "image-center animate-center image-narrow"
+      }
+    ]
+  },
+  "The Camarilla": {
+    "content": "The Camarilla is the largest of the vampiric sects. The Ivory Tower once presumed to represent and protect all vampires by enforcing and promulgating the Six Traditions, but it has shut its doors against outsiders in recent nights. Now, the Camarilla stands for seven clans: Malkavian, Nosferatu, Toreador, Tremere, Ventrue, and recent inductees the Banu Haqim and the Lasombra.",
+    "images": [
+      {
+        "src": "sectCamarillaGold.webp",
+        "class": "image-center animate-center image-narrow"
+      }
+    ]
+  },
+  "The Anarchs": {
+    "content": "The Anarchs are vampires who reject the status quo of Camarilla society. They especially resent the privileged status held by virtue of age, and champion the rights of younger Kindred against an establishment that concentrates power among the very old. Unlike the Sabbat, the Anarchs loosely hold to the Traditions of the Camarilla, and are largely (if reluctantly) tolerated by the larger sect.",
+    "images": [
+      {
+        "src": "sectAnarchsRed.webp",
+        "class": "image-center animate-center image-narrow"
+      }
+    ]
+  },
+  "The Capuchin": {
+    "content": "If rumors are to be believed, it was the Capuchin's magic that knit the Hecata together at the Family Reunion. The Harbingers of Ashur whisper that the hooded elder is the ancient Cappadocian methuselah who dragged them back from the Underworld after they escaped the Giovanni purge. Whatever the Capuchin has done remains shrouded in his own silence. Any influence he wields tonight is subtle, hidden behind proxies, wraiths and misleading legends.",
+    "images": [
+      {
+        "src": "clanCappadocianWhite.webp",
+        "class": "image-left animate-slide-down"
+      }
+    ]
+  },
+  "Dracula": {
+    "content": "Dracula, the vampire made famous by the mortal author Bram Stoker, is indeed real. An elder of Clan Tzimisce, the powers described in Stoker's novel are manifestations of Dracula's command of myriad disciplines, including Protean, Dominate, Presence and Animalism.",
+    "images": [
+      {
+        "src": "clanTzimisceIvory.webp",
+        "class": "image-left animate-slide-down"
+      }
+    ]
+  },
+  "Shalim": {
+    "surtitle": "The Blood God",
+    "subtitle": "Apolleon the Traveler ◆ The Night That Walks",
+    "surtitleClass": "blood-god",
+    "titleClass": "blood-god",
+    "content": "Shalim is listed in some Gehenna War dossiers as a probable Fourth Generation Lasombra whose body drowned long ago and now rises wherever deep shadow meets deeper water; the Cult of Shalim describes their patron as the empty place at the bottom of the sea that hungers for gods, and their preferred offering seems to be the ashes of other methuselahs.",
+    "images": [
+      {
+        "src": "clanLasombraPurple.webp",
+        "class": "image-left animate-slide-down"
+      }
+    ]
+  },
+  "Clan Ventrue": {
+    "subtitle": "The Clan of Kings",
+    "content": "Clan Ventrue of the Camarilla descends from Ventru of the Third Generation, childe of Irad the Strong, childe of Caine the First. Aristocrats and rulers, Clan Ventrue represents the establishment. They see themselves as the leaders of the Camarilla, and hold more positions of influence and power (among both mortals and Kindred) than any other clan.",
+    "subtitleClass": "clan-subtitle",
+    "images": [
+      {
+        "src": "clanVentrueGold.webp",
+        "class": "image-center animate-center"
+      }
+    ]
+  },
+  "Clan Brujah": {
+    "subtitle": "The Learned Clan",
+    "content": "Clan Brujah of the Anarchs descends from Troile of the Third Generation, childe of Irad the Strong, childe of Caine the First. Iconoclasts and rebels, they boldly fight the establishment to forge a new world.",
+    "subtitleClass": "clan-subtitle",
+    "images": [
+      {
+        "src": "clanBrujahRed.webp",
+        "class": "image-center animate-center"
+      }
+    ]
+  },
+  "Clan Gangrel": {
+    "subtitle": "The Clan of the Beast",
+    "content": "Clan Gangrel of the Anarchs descends from Ennoia of the Third Generation, whose sire is unknown. Outcasts and wanderers, the Gangrel are closely tied to the animal aspect of the Beast — whether as a wolf in back alleys, or as a shark in the boardroom.",
+    "subtitleClass": "clan-subtitle",
+    "images": [
+      {
+        "src": "clanGangrelRed.webp",
+        "class": "image-center animate-center"
+      }
+    ]
+  },
+  "Clan Malkavian": {
+    "subtitle": "The Moon Clan",
+    "content": "Clan Malkavian of the Camarilla descends from Malkav of the Third Generation, childe of Enoch the Wise, childe of Caine the First. Cursed with vision and madness, the Malkavians are seers for whom prophecy and delusion are often indistinguishable.",
+    "subtitleClass": "clan-subtitle",
+    "images": [
+      {
+        "src": "clanMalkavianGold.webp",
+        "class": "image-center animate-center image-narrow"
+      }
+    ]
+  },
+  "Clan Nosferatu": {
+    "subtitle": "The Clan of the Hidden",
+    "content": "Clan Nosferatu of the Camarilla descends from Absimiliard of the Third Generation, childe of Zillah the Beautiful, childe of Caine the First. Cursed with deformity and ugliness, they watch and listen from the shadows and the sewers, building an ever-growing treasure-trove of secrets. This knowledge is highly prized, and comprises the largest part of their political capital.",
+    "subtitleClass": "clan-subtitle",
+    "images": [
+      {
+        "src": "clanNosferatuGold.webp",
+        "class": "image-center animate-center image-narrow"
+      }
+    ]
+  },
+  "Clan Toreador": {
+    "subtitle": "The Clan of the Rose",
+    "content": "Clan Toreador of the Camarilla descends from Arikel of the Third Generation, childe of Enoch the Wise, childe of Caine the First. Famous and infamous as a clan of artists and innovators, they are one of the bastions of the Camarilla, for their very survival depends on the facades of civility and grace on which the sect prides itself.",
+    "subtitleClass": "clan-subtitle",
+    "images": [
+      {
+        "src": "clanToreadorGold.webp",
+        "class": "image-center animate-center"
+      }
+    ]
+  },
+  "Clan Tremere": {
+    "subtitle": "The Usurpers",
+    "content": "Clan Tremere of the Camarilla descends from Tremere of the Third Generation, who diablerized and usurped Saulot, childe of Enoch the Wise, childe of Caine the First. Thus Clan Tremere replaced Clan Salubri as one of the thirteen Great Clans, and hunted them to extinction. Warlocks and blood sorcerers, the once-mighty Tremere recently suffered a devastating blow from the Second Inquisition.",
+    "subtitleClass": "clan-subtitle",
+    "images": [
+      {
+        "src": "clanTremereGold.webp",
+        "class": "image-center animate-center"
+      }
+    ]
+  },
+  "Clan Lasombra": {
+    "subtitle": "The Night Clan",
+    "content": "Clan Lasombra of the Camarilla descends from Lasombra of the Third Generation, childe of Irad the Strong, childe of Caine the First. Predatory, elegant and inhuman manipulators of darkness and shadow, these former leaders of the Sabbat are ruthless social Darwinists who believe in the worthy ruling, and the unworthy serving.",
+    "subtitleClass": "clan-subtitle",
+    "images": [
+      {
+        "src": "clanLasombraGold.webp",
+        "class": "image-center animate-center"
+      }
+    ]
+  },
+  "Clan Tzimisce": {
+    "subtitle": "The Old CLan",
+    "content": "Clan Tzimisce (\"zih-ME-see\"), originally of the Sabbat but now seen more frequently in Anarch domains, descends from an Antediluvian known only as \"the Eldest\", childe of Enoch the Wise, childe of Caine the First. Scholars, sorcerers and flesh-shapers, the Tzimisce are alien, covetous and territorial, hoarding people and prizes as possessions for little more than the satisfaction of ownership and dominion.",
+    "subtitleClass": "clan-subtitle",
+    "images": [
+      {
+        "src": "clanTzimisceRed.webp",
+        "class": "image-center animate-center"
+      }
+    ]
+  },
+  "Clan Ravnos": {
+    "subtitle": "The Wanderer Clan",
+    "content": "Clan Ravnos of India descends from Zapathasura of the Third Generation, whose sire is unknown. Nomads, tricksters and performers, they have long been villified as con-artists and deceivers. Armed with unparalleled powers of illusion, their rejection by the Camarilla has forced the few who remain into Anarch domains.",
+    "subtitleClass": "clan-subtitle",
+    "images": [
+      {
+        "src": "clanRavnosRed.webp",
+        "class": "image-center animate-center"
+      }
+    ]
+  },
+  "The Banu Haqim": {
+    "subtitle": "The Clan of the Hunt",
+    "content": "The Banu Haqim, originally the Assamites of the mountain fortress Alamut in the Middle East, descend from Haqim of the Third Generation, childe of Zillah the Beautiful, childe of Caine the First. Traditionally seen as dangerous assassins and diablerists, in truth they are guardians, scholars and warriors with strict standards of honor and a penchant for judging those who fall short.",
+    "subtitleClass": "clan-subtitle",
+    "images": [
+      {
+        "src": "clanBanuHaqimGold.webp",
+        "class": "image-center animate-center"
+      }
+    ]
+  },
+  "The Hecata": {
+    "subtitle": "The United Clans of Death",
+    "content": "The Hecata are a sect on par with the Camarilla, comprising several clans all of whom share an affinity with the necromantic aspects of Oblivion. Once divided among the Giovanni, the Samedi, the Lamia, the Cappadocians, the Nagaraja, and more, all of this changed during the Family Reunion, where the Hecata united under a single banner as the first potential rival to the Camarilla since the Ivory Tower was born.",
+    "subtitleClass": "clan-subtitle",
+    "images": [
+      {
+        "src": "sectHecataModernWhite.webp",
+        "class": "image-center animate-center"
+      }
+    ]
+  },
+  "The Ministry": {
+    "subtitle": "The Snake Clan",
+    "content": "The Ministry of the Anarchs, once the notorious Clan Setite, descends from Setekh of the Third Generation, childe of Zillah the Beautiful, childe of Caine the First. Ministers seek to break the chains of ideology, morality, and duty that they see binding their fellow Kindred. An insidious, destabilizing influence, they are viewed with suspicion regardless of the truth behind their motives.",
+    "subtitleClass": "clan-subtitle",
+    "images": [
+      {
+        "src": "clanMinistryRed.webp",
+        "class": "image-center animate-center image-wide"
+      }
+    ]
+  },
+  "Clan Salubri": {
+    "subtitle": "The Clan of Healers",
+    "content": "Before the Tremere rose, there was Clan Salubri &mdash; a nearly extinct bloodline of healer vampires cursed with a third eye. Saulot, their Antediluvian founder, was slain by Tremere himself, and the Usurpers hunted Salubri to near-extinction. Tonight, only a handful of Salubri are rumored to survive as loners and wanderers. The Camarilla dismisses them as myth or pawns of the Inconnu, but Anarchs occasionally whisper about encountering kind, one-eyed mystics offering aid and asking nothing in return.",
+    "subtitleClass": "clan-subtitle",
+    "images": [
+      {
+        "src": "clanSalubriIvory.webp",
+        "class": "image-center animate-center"
+      }
+    ]
+  },
+  "Caitiff": {
+    "subtitle": "The Clanless",
+    "content": "Caitiff are vampires without a recognized clan, either because their lineage is truly unknown or because no respectable sire will admit to them. In the Camarilla, the clanless are often scapegoats for Masquerade breaches; in Anarch circles, some see them as proof that caste and pedigree are lies told for no other purpose than gaining power.",
+    "images": [
+      {
+        "src": "clanCaitiffIvory.webp",
+        "class": "image-center animate-center"
+      }
+    ]
+  },
+  "The Thin-Blooded": {
+    "content": "Thin-blooded vampires, or \"Duskborn,\" are of the Fourteenth Generation or higher — so dilute is their Blood that many cannot form clans or wield traditional Disciplines. They are often scorned and hunted by older Kindred as harbingers of Gehenna. Yet their weakness is also a strange strength: some can endure sunlight longer, and others dabble in bizarre alchemical rituals to mimic the powers denied to them.",
+    "images": [
+      {
+        "src": "clanThinBloodRed.webp",
+        "class": "image-left animate-slide-down"
+      }
+    ]
+  },
+  "Mithras": {
+    "surtitle": "The Blood God",
+    "subtitle": "Bringer of Light ◆ The Sun ◆ Lord of London",
+    "surtitleClass": "blood-god",
+    "titleClass": "blood-god",
+    "content": "Mithras, long-time master of London, is a Fourth Generation Ventrue whose personal cult has treated him as a god of empire since Rome. Between suspected diableries and his habit of body-hopping through prepared vessels, many Camarilla scholars quietly file him in the Blood God category and wonder whether the Beckoning was simply Mithras calling old debts due across Europe.",
+    "images": [
+      {
+        "src": "clanVentrueGold.webp",
+        "class": "image-left animate-slide-down"
+      }
+    ]
+  },
+  "Kemintiri": {
+    "surtitle": "The Blood God",
+    "subtitle": "Lady Ophelia ◆ Hayed Khalidah Sleiman ◆ and Countless Others",
+    "surtitleClass": "blood-god",
+    "titleClass": "blood-god",
+    "content": "Kemintiri is a Fourth Generation Setite with the unique privilege of being the first name on the Camarilla's infamous Red List. A thief of souls, Kementiri steals faces, identities, and whole cults. From Babylonian temples to modern studios, she appears as a radiant queen whose worshippers vanish into her service, until she vanishes into the unlife of another. Some claim she now wears the skin of at least one sect leader.",
+    "images": [
+      {
+        "src": "clanSetiteIvory.webp",
+        "class": "image-left animate-slide-down"
+      }
+    ]
+  },
+  "Enkidu": {
+    "surtitle": "The Blood God",
+    "subtitle": "The Wild Man ◆ The Noah ◆ Sabrina",
+    "surtitleClass": "blood-god",
+    "titleClass": "blood-god",
+    "content": "Stories of Enkidu describe a Fourth Generation Gangrel so warped by Protean that defining him as anything singular is folly. Sabbat legends swear he hunted other methuselahs for sport even before the Gehenna War, and that when Enkidu wakes and prowls a region, the only sensible response is to get very far away and let the so-called Blood Gods fight.",
+    "images": [
+      {
+        "src": "clanGangrelIvory.webp",
+        "class": "image-left animate-slide-down"
+      }
+    ]
+  },
+  "Plague-Bride": {
+    "surtitle": "The Blood God",
+    "subtitle": "Typhoid Mary ◆ Crazy Jane ◆ Jane Pennington",
+    "surtitleClass": "blood-god",
+    "titleClass": "blood-god",
+    "content": "The Plague-Bride is a Fourth Generation Malkavian methuselah said to have once soothed Malkav himself, later devouring the earth soaked in his blood and walking the world as a vector for both disease and insight. Her appearances across history under names like Typhoid Mary and Crazy Jane leave mortals rotting, Kindred starving and survivors haunted by brief, terrible moments of clarity.",
+    "images": [
+      {
+        "src": "clanMalkavianIvory.webp",
+        "class": "image-left animate-slide-down image-narrow"
+      }
+    ]
+  },
+  "Montano": {
+    "surtitle": "The Blood God",
+    "subtitle": "Ontai ◆ Betrayer of Night",
+    "surtitleClass": "blood-god",
+    "titleClass": "blood-god",
+    "content": "Montano, eldest childe of the Lasombra Antediluvian, is a Fourth Generation Lasombra antitribu who quietly joined the Camarilla after the diablerie of his sire. Some tales of the Gehenna War rank him among the Blood Gods not for open rampages but for the way entire Sabbat bishoprics seem to fall into shadow and silence when his eye falls upon them.",
+    "images": [
+      {
+        "src": "clanLasombraAntitribuGold.webp",
+        "class": "image-left animate-slide-down"
+      }
+    ]
+  },
+  "Ur-Shulgi": {
+    "surtitle": "The Blood God",
+    "subtitle": "Herald of Haqim ◆ The Black Shepherd ◆ The Skinless One",
+    "surtitleClass": "blood-god",
+    "titleClass": "blood-god",
+    "content": "Ur-Shulgi is a Fourth Generation Assamite who rose from torpor beneath Alamut at the turn of the millennium and immediately began purging his own clan of what he saw as weakness and heresy; to loyalists he is a living miracle of Haqim's will, to the exiled Banu Haqim, he is a tyrant Blood God whose idea of reform involves turning centuries of faith and diplomacy into bonfires.",
+    "images": [
+      {
+        "src": "clanAssamiteIvory.webp",
+        "class": "image-left animate-slide-down image-wide"
+      }
+    ]
+  },
+  "Ceri": {
+    "surtitle": "The Blood God",
+    "surtitleClass": "blood-god",
+    "titleClass": "blood-god",
+    "content": "Ceri is rumored to be a Fourth Generation Toreador who treats whole cities as performance pieces, sometimes appearing as a tall, ghost-pale woman, other times as a bone-white spider dragging itself through old catacombs. In the Gehenna War, her network of informants, the Cartographers, supposedly sells maps of methuselah movements to whichever side has amused her most that year.",
+    "images": [
+      {
+        "src": "clanToreadorIvory.webp",
+        "class": "image-left animate-slide-down"
+      }
+    ]
+  },
+  "Tiamat": {
+    "surtitle": "The Blood God",
+    "subtitle": "Warden of Drakonskyr ◆ Wielder of the Sword of Nul",
+    "surtitleClass": "blood-god",
+    "titleClass": "blood-god",
+    "content": "Tiamat is a supposed Fourth Generation Ventrue whose self-image drifted from queen to dragon over the centuries, surrounded by cults that preach diablerie as sacrament and speak of growing metaphorical new heads by devouring enough rivals. Battlefield rumors describe a multi-voiced presence that sends even elders into Rötschreck when her name arrives on the backs of whispered warnings.",
+    "images": [
+      {
+        "src": "clanVentrueIvory.webp",
+        "class": "image-left animate-slide-down"
+      }
+    ]
+  },
+  "Michael": {
+    "surtitle": "The Blood God",
+    "subtitle": "Beshter ◆ The Son ◆ The Father ◆ The Holy Ghost",
+    "content": "Michael the Archangel was the Toreador mastermind behind the utopian Dream that shaped Constantinople. A Fourth Generation aesthete raised by the Antediluvian Arikel herself, Michael tried to turn an empire into a work of sacred art. Official histories say he perished with Byzantium, but a few Gehenna War cults whisper prayers to a Radiant Father whose miracles look very much like the old stories of Michael's blessings and punishments.",
+    "titleClass": "blood-god",
+    "surtitleClass": "blood-god",
+    "images": [
+      {
+        "src": "clanToreadorGold.webp",
+        "class": "image-left animate-slide-down"
+      }
+    ]
+  },
+  "Resonance & Dyscrasias": {
+    "subtitle": "Game Mechanic",
+    "content": "Strong emotions can give a mortal's blood \"resonance\". Drinking strongly-resonant blood empowers the use of associated disciplines; the strongest resonances (called \"dyscrasias\") confer even greater rewards. It is possible to influence resonances in mortals, cultivating their blood to your tastes. With a Project, you can change a resonance entirely, and even confer a dyscrasia upon the blood.",
+    "subtitleClass": "mechanic-subtitle"
+  },
+  "Memoriam": {
+    "subtitle": "Game Mechanic",
+    "content": "If you want to assert that you did something in the past, you can call for a \"Memoriam\". During Memoriam, we play out a quick flashback scene to see how things really turned out. If you are successful, you retroactively gain the benefits of your past efforts in the present.",
+    "subtitleClass": "mechanic-subtitle"
+  },
+  "Projects": {
+    "subtitle": "Game Mechanic",
+    "content": "Any long-term goal that you have for your character should be tracked as a \"Project\". To start a Project, describe the goal you wish to accomplish, and we'll go from there. Be warned: Your adversaries are running their own Projects, and may interfere with yours. There are systems for discovering Projects, interfering with Projects, and even stealing a Project and reaping its benefits.",
+    "subtitleClass": "mechanic-subtitle"
+  },
+  "Loresheets & Bloodlines": {
+    "subtitle": "Game Mechanic",
+    "content": "These two Backgrounds invite you to connect yourself to the great stories and Kindred luminaries of the past and present, and to declare your lineage to be one of renown. You are limited to buying dots in a single Loresheet and a single Bloodline, so choose wisely.",
+    "subtitleClass": "mechanic-subtitle"
+  },
+  "The Great War": {
+    "content": "The first industrialized bloodbath engulfed Europe, shattering mortal and vampiric order alike. 10 million lives were lost in the hell of trenches, and even the undead quailed before machine guns and artillery that could snuff out immortality. Amid the carnage, elder Kindred went to ground or fell, while opportunistic young Anarchs reveled in the chaos &mdash; turning trench lines and ghost-filled villages into their hunting grounds, recruiting doomed soldiers and staking new domains in the crucible of war.",
+    "subtitle": "1914 &minus; 1918",
+    "subtitleClass": "date-line"
+  },
+  "The Convention of Thorns": {
+    "content": "The Convention of Thorns is the founding document of the Camarilla. Signed between Camarilla leaders, Anarchs, and Clan Assamite, the three-way peace agreement marked the end of the first Anarch Revolt.",
+    "subtitle": "1493",
+    "subtitleClass": "date-line"
+  },
+  "Masquerade": {
+    "surtitle": "The First Tradition",
+    "content": "\"Thou shall not reveal thy true nature to those not of the Blood.<br>Doing so forfeits your claim to the Blood.\"",
+    "surtitleClass": "white-text",
+    "contentClass": "old-text"
+  },
+  "Caine the First": {
+    "subtitle": "The Father of All Kindred",
+    "content": "Caine, son of Adam, was the First vampire.<br>He sired the **Second Generation**, of which there were three:<br>**Enoch** the Wise, **Irad** the Strong, and **Zillah** the Beautiful.<br>All are said to have perished in the time before the Great Flood at the hands of their childer, the Antediluvians of the Third Generation."
+  },
+  "Domain": {
+    "surtitle": "The Second Tradition",
+    "content": "\"All others owe thee respect while in thy domain.<br>None may challenge thy word while in it.\"",
+    "surtitleClass": "white-text",
+    "contentClass": "old-text"
+  },
+  "Progeny": {
+    "surtitle": "The Third Tradition",
+    "content": "\"Thou shall only Sire another with the permission of thine Eldest.\"",
+    "surtitleClass": "white-text",
+    "contentClass": "old-text"
+  },
+  "Accounting": {
+    "surtitle": "The Fourth Tradition",
+    "content": "\"Those thou create are thine own children.<br>Until thy Progeny shall be Released, their sins are thine to endure.\"",
+    "surtitleClass": "white-text",
+    "contentClass": "old-text"
+  },
+  "Hospitality": {
+    "surtitle": "The Fifth Tradition",
+    "content": "\"When thou comest to a foreign city, thou shall present thyself to the Eldest who ruleth there.<br>Without the word of acceptance, thou art nothing.\"",
+    "surtitleClass": "white-text",
+    "contentClass": "old-text"
+  },
+  "Destruction": {
+    "surtitle": "The Sixth Tradition",
+    "content": "\"The right to destroy another of thy kind belongeth only to thine Eldest.<br>Only the Eldest among thee shall call the Blood Hunt.\"",
+    "surtitleClass": "white-text",
+    "contentClass": "old-text"
+  },
+  "The Prince": {
+    "content": "The prince is the vampire who has claimed leadership over a city on behalf of the Camarilla. Only the prince possesses the authority of the Eldest, the right to Embrace, and ultimate dominion over the city."
+  },
+  "The Council of Primogen": {
+    "content": "The primogen are Camarilla officials that, at least in theory, serve as the representatives of their respective clans to the prince of a city under Camarilla rule. In general, the ruling vampires of the city value the primogen and their opinions; they are called in to consult on decisions; and their recommendations carry great weight."
+  },
+  "The Convention of Prague": {
+    "content": "At the Convention of Prague, several Camarilla leaders were killed by Brujah rebels during the clan's violent exit from the sect. Tonight, Clan Brujah is associated with the Anarchs, along with many of Clan Gangrel (another clan that recently left the Camarilla).",
+    "subtitle": "2012",
+    "subtitleClass": "date-line"
+  },
+  "High Clans": {
+    "content": "Before the Second Inquisition destroyed Clan Tremere's Prime Chantry in Vienna, the warlocks were one of the High Clans of the Camarilla, along with Clan Toreador and Clan Ventrue."
+  },
+  "Low Clans": {
+    "content": "Clan Brujah and Clan Gangrel recently left the Camarilla to join the Anarch Movement, leaving Clan Malkavian and Clan Nosferatu as the two Low Clans of the Camarilla."
+  },
+  "The Blood Hunt": {
+    "content": "If the prince calls a Blood Hunt (or the more-formal \"Lexitalionis\") against a vampire, all Kindred in the city are given permission to kill and even diablerize the convicted. It is one of the few times diablerie is sanctioned by the Camarilla."
+  },
+  "The Blood Bond": {
+    "content": "Drinking another vampire's blood on three consecutive nights will forge a blood bond, a hollow mockery of subservient love that enslaves you to their will."
+  },
+  "Diablerie": {
+    "content": "Diablerie is the act of draining another vampire's blood and soul to gain a measure of their power. It is the only way to lower one's generation, but it is anathema to the Camarilla: Diablerists risk final death if their crimes are discovered."
+  },
+  "Gehenna": {
+    "content": "Foretold in the Book of Nod, a sacred text to many Kindred, Gehenna is the vampire Armageddon: It is prophesied to be the time when the Antediluvians will rise from their slumbers and devour their descendants."
+  },
+  "Jyhad": {
+    "content": "The Jyhad is said to be the \"eternal struggle\" for dominance between ancient methuselahs and the surviving Antediluvians. Believers claim it is a subtle and insidious conflict, one that is fought in the everynight interactions of younger vampires, most of whom are entirely unaware they are being controlled and used as pawns."
+  },
+  "Golconda": {
+    "content": "Golconda is a mystical state of enlightenment where a vampire is no longer subject to the Beast, or, alternatively, where the Beast and human aspects of a vampire are in balance. The secrets of achieving Golconda are known by very few; many more consider Golconda to be a myth."
+  },
+  "Frenzy": {
+    "content": "A frenzy occurs when the Beast seizes control of a vampire's mind and body to act out its most primal instincts, regardless of the consequences. They are often the result of being overwhelmed by fear, anger, or hunger."
+  },
+  "The Beckoning": {
+    "content": "The Beckoning is a calling in the Blood, a cry for aid from the sleeping Antediluvians to guard their places of rest from the Sabbat, who search for them relentlessly in the Middle East. The stronger the Blood, the stronger the call: Only vampires of the Ninth Generation and lower feel it at all. Many continue to resist the summons; many others have found it impossible to ignore."
+  },
+  "Torpor": {
+    "content": "Torpor is a long state of dreamless slumber, during which a Kindred quite literally sleeps like the dead. Serious injury or hunger can force a vampire into torpor, as can a stake that punctures the heart. The oldest vampires enter torpor voluntarily, sleeping away the centuries for reasons unknown."
+  },
+  "The Blush of Life": {
+    "content": "With effort, Kindred can force their hearts to beat and their cheeks to flush for a time, assuming the appearance of a living mortal. Called \"the Blush of Life\", it is an imperfect disguise that grows ever more difficult to achieve as one loses touch with humanity."
+  },
+  "Enoch the Wise": {
+    "content": "Enoch the Wise was Caine's first childe, and the eldest member of the Second Generation. Brilliant and insightful, the Antediluvians he sired inherited the gift of Auspex, as did the clans they founded: Clan Malkavian; Clan Salubri, who would be usurped by the Tremere; Clan Toreador; and Clan Tzimisce."
+  },
+  "Zillah the Beautiful": {
+    "content": "Zillah the Beautiful was Caine's second childe, and the middle sibling of the Second Generation. A master of perception and disguise, the Antediluvians she sired inherited the gift of Obfuscate, as did the clans they founded: Clan Nosferatu; Clan Assamite, known tonight as the Banu Haqim; and Clan Setite, known tonight as the Ministry."
+  },
+  "Irad the Strong": {
+    "content": "Irad the Strong was Caine's third childe, and the youngest member of the Second Generation. A man of strong will and great ambition, the Antediluvians he sired inherited the gift of Dominate, as did the clans they founded: Clan Brujah, who rejected the Gift; Clan Cappadocian, who would be usurped by the Giovanni; Clan Lasombra; and Clan Ventrue."
+  },
+  "The Pyramid Falls": {
+    "content": "Until recently, Clan Tremere was the most rigidly organized of the thirteen Great Clans: every warlock was bound by Blood to the strict hierarchy of the Pyramid. But in recent nights, the Blood of Clan Tremere has lost its power to command obedience. The Pyramid has shattered, dividing the clan into three factions: House Tremere, House Goratrix, and House Carna.",
+    "subtitle": "2008",
+    "subtitleClass": "date-line"
+  },
+  "Shovelheads": {
+    "content": "When the Sabbat assault a city, no strategy is more threatening to the Masquerade than their penchant for mass-Embracing mortals, knocking them unconscious with a shovel before they frenzy, and throwing them into an open grave from which they must dig themselves out — a process that invariably drives them insane."
+  },
+  "The Book of Nod": {
+    "content": "An ancient text hailed as scripture by some and as fraudulent nonsense by others, the Book of Nod is the oldest text that mentions vampires as they exist tonight. It begins with the Testament of Caine, tells of his relationship with the blood-witch Lillith, describes the First City and the creation of the thirteen Great Clans, and ends with the doomsday Prophecy of Gehenna."
+  },
+  "Prestation": {
+    "content": "Prestation describes the system of exchanging favors among the Kindred. Since debts do not expire and eternity is a very long time, prestation carries great weight among immortals of all sects. Though favors (or \"boons\" as they are known) are usually tracked informally, a Kindred who renegs on such a debt is quickly identified, and risks social ostracism — or worse."
+  },
+  "The Seneschal": {
+    "content": "A seneschal is an influential vampire who is empowered by the prince to act on their behalf on most matters. At any time, they may be asked to step into the prince's place if they leave town on business, abdicate, or are slain. However powerful the position of seneschal, all actions taken by the city's second-highest authority remain subject to revocation by the prince."
+  },
+  "Justicars": {
+    "content": "The justicars are the most powerful visible component of the Camarilla's worldwide presence, charged with adjudicating matters of the Traditions on a global scale. There is one justicar for each Camarilla clan: Juliet, the Malkavian justicar; Molly MacDonald, the Nosferatu justicar; Diana Iadanza, the Toreador justicar; Ian Carfax, the Tremere justicar; and Lucinde, the Ventrue justicar."
+  },
+  "Archons": {
+    "content": "Archons are the trusted, hand-picked servants of the justicars: if the justicars are the Camarilla's hands, the archons are its fingers. A justicar can appoint any number of archons, and each acts with the justicar's full authority in all matters. The appearance of an archon in a city is a time of great uncertainty, for even princes must defer to a justicar's mandate."
+  },
+  "The Sheriff": {
+    "content": "The sheriff is a vampire selected by the prince and primogen who enforces the Blood Hunt within the prince's domain, as well as any other edicts of the prince. Ultimately, they are charged with maintaining order and harmony within a city, and investigating the commission of any crimes against the prince's laws or the Traditions themselves."
+  },
+  "Scourges": {
+    "content": "A scourge is directly subordinate to the prince, and is responsible for the destruction of the thin-blooded as well as any other vampires who have been Embraced in violation of the Third Tradition. Unlike the sheriff, a scourge operates under no pretense of due process or investigation: those they hunt are already guilty by their very nature."
+  },
+  "Antitribu": {
+    "content": "An antitribu is a vampire who is aligned with a sect that opposes the one their clan traditionally associates with. Most antitribu were defectors to the Sabbat, though Lasombra antitribu held status in the Camarilla long before they were formally welcomed. With the fanatic retreat of the Sabbat, the term has mostly fallen out of favour in modern nights."
+  },
+  "The Night of Ashes": {
+    "surtitle": "Montreal",
+    "content": "Hunters struck a Sabbat mass in Montreal, turning the Sword of Caine's Canadian stronghold into a pyre. Survivors claim the inferno was no accident but a meticulously planned strike, paving the way for the Camarilla to claim the city after centuries in exile.",
+    "subtitle": "2008",
+    "subtitleClass": "date-line",
+    "surtitleClass": "location"
+  },
+  "The Ashirra & the Ivory Tower": {
+    "content": "The old divide between the Camarilla and the Ashirra is eroding under the pressure of the Gehenna War. Envoys of both sects admit to coordinated campaigns against the Sabbat, and the recent Vermillion Wedding between the Toreador Victoria Ash and the Banu Haqim Vizier Tergyrius has cemented a fragile alliance."
+  },
+  "Ancestor Cults in the Camarilla": {
+    "content": "Rumor in certain Elysia claims that Inner Circle agents now quietly sponsor ancestor-worshipping cults within their own ranks, hoping that if the Blood Gods rise, they will remember who lit the first incense. Officially, of course, any talk of Antediluvians remains mere superstition unworthy of a proper Camarilla mind."
+  },
+  "Thin-Blood Alchemy": {
+    "content": "Denied the gift of strong Blood, some thin-blooded vampires turn to alchemy to survive. In secret labs or grungy kitchen sinks, they mix stolen vitae with strange reagents, brewing elixirs that mimic vampiric powers. A thin-blood alchemist might craft a potion to grow fangs for a night, walk in daylight, or even temporarily assume a clan's traits. More traditional Kindred sneer at these “half-breed tricks,” but more than one has quietly tried to purchase a thin-blood's formula when desperation knocks."
+  },
+  "The Rack": {
+    "surtitle": "Of Cities:",
+    "content": "The Rack consists of the most favourable hunting grounds in the city, and thus the most valuable domains. Clubs, bars and other areas with a vibrant night life generally comprise the Rack.",
+    "surtitleClass": "of-cities"
+  },
+  "The Barrens": {
+    "surtitle": "Of Cities:",
+    "content": "The Barrens are places in the city with a dearth of mortal prey, making them unsuitable for the Kindred. The Barrens often include industrial areas, abandoned districts, and the city outskirts.",
+    "surtitleClass": "of-cities"
+  },
+  "Elysium": {
+    "surtitle": "Of Cities:",
+    "content": "Elysium is any place declared as such by the prince, wherein the safety of all guests is guaranteed and violence is forbidden. Until very recently, Elysiums served as neutral ground for all Kindred. Tonight, however, the Camarilla has made it clear that only those loyal to the Ivory Tower should expect the protection of its laws.",
+    "surtitleClass": "of-cities"
+  },
+  "Underground Malls": {
+    "surtitle": "Of Cities:",
+    "content": "Sprawling underground complexes like Toronto's PATH or Montreal's RESO are perfect places for the Damned to move in daylight hours by proxy. Ghouls and mortal pawns run errands under fluorescent lights while their masters sleep, and more than one industrious vampire has buried a haven beneath the food courts and pharmacy basements.",
+    "surtitleClass": "of-cities"
+  },
+  "Financial Towers": {
+    "surtitle": "Of Cities:",
+    "content": "Glass-and-steel financial districts are temples to modern power, and clans like Ventrue, Lasombra, and Toreador compete viciously for their boardrooms. A single signing bonus, hostile takeover, or data breach can shift more mortal lives than a dozen traditional blood hunts, all without a single fang being bared.",
+    "surtitleClass": "of-cities"
+  },
+  "University Campuses": {
+    "surtitle": "Of Cities:",
+    "content": "Universities are rich feeding grounds and recruitment pools, dense with stressed mortals and obsessed researchers. Brujah and Tremere have feuded over campuses for centuries, but in the 21st century even Nosferatu and thin-bloods haunt student forums and research labs, mining them for secrets as well as vessels.",
+    "surtitleClass": "of-cities"
+  },
+  "Waterfronts & Harbors": {
+    "surtitle": "Of Cities:",
+    "content": "Harbors and lakefronts are liminal spaces where cargo, people, and secrets all come and go under cover of night. In Great Lakes cities like Toronto and Hamilton, rumors speak of entire shipping containers that never pass customs because their contents walk off the docks before dawn.",
+    "surtitleClass": "of-cities"
+  },
+  "Transit Hubs": {
+    "surtitle": "Of Cities:",
+    "content": "Major transit hubs, from Union Station-style rail termini to airport hotels, serve as neutral zones where visiting Kindred slip in and out of a domain. Princes often pretend to control these places completely; the truth is that the number of secrets traded in station lounges would drown most courts in scandal.",
+    "surtitleClass": "of-cities"
+  },
+  "Suburbs": {
+    "surtitle": "Of Cities:",
+    "content": "The Kindred once dismissed the suburbs as soul-dead sprawl, but surveillance cameras, home security systems, and bored insomniacs now make them treacherous hunting grounds. Anarchs joke that any vampire feeding in a cul-de-sac is just begging to star in a true-crime podcast episode.",
+    "surtitleClass": "of-cities"
+  },
+  "Ruined Rust Belts": {
+    "surtitle": "Of Cities:",
+    "content": "Former industrial hubs like Gary, Indiana, and Hamilton, Ontario bleed jobs and people but offer cheap, forgotten real estate. To some princes, these rusting cities are dumping grounds for troublemakers; to cunning ancillae, they are pressure valves and laboratories for strange new political experiments.",
+    "surtitleClass": "of-cities"
+  },
+  "Sanctuaries": {
+    "surtitle": "Of Cities:",
+    "content": "Certain ports, like Havana and a handful of nameless fishing towns, quietly act as sanctuaries for hunted Kindred. No sect officially recognizes these neutral harbors, but ships carrying Red List members, burned-out ancillae, and thin-blood refugees all seem to find them when they are most desperate.",
+    "surtitleClass": "of-cities"
+  },
+  "A Headless Court": {
+    "surtitle": "Ottawa",
+    "content": "Recent rumors from Ottawa say that Prince Arundel disappeared under mysterious circumstances, leaving Seneschal Eden Corliss in charge by default. Some call Ottawa a decapitated city waiting for a new crowned head; others claim Corliss prefers things exactly this way and quietly sabotages every contender.",
+    "surtitleClass": "location"
+  },
+  "Ravines & Greenbelts": {
+    "surtitle": "Toronto",
+    "content": "The ravines and greenbelts threading through Toronto and its suburbs are pockets of darkness that cut straight into the heart of the city. Gangrel claim the animal life there is unusually quick to sense the touch of the Beast, and more than one neonate has vanished after chasing howls into the trees.",
+    "surtitleClass": "location"
+  },
+  "The Golden Horseshoe": {
+    "surtitle": "Hamilton, Toronto & Oshawa",
+    "content": "The urban sprawl wrapped around Lake Ontario forms a nearly continuous chain of cities, ports, and highways from Hamilton through Toronto to Oshawa. Kindred speak of the Golden Horseshoe as a patchwork of overlapping domains, where any political misstep can ripple along the lakeshore into three different princes' tempers.",
+    "surtitleClass": "location"
+  },
+  "The Masquerade in the Age of Terror": {
+    "content": "After the September 11th attacks, Western governments built unprecedented surveillance and counter-terror machinery. Kindred who thought the Masquerade safe in their control learned the hard way that feeding patterns and travel records can look an awful lot like terrorist logistics when examined by the wrong analyst.",
+    "subtitle": "2001+",
+    "subtitleClass": "date-line"
+  },
+  "The Digital Panopticon": {
+    "content": "In the modern nights, every camera, smartphone, and loyalty card is another potential pry bar for the Second Inquisition. Younger Kindred adapt by using burner phones, stolen identities, and dead-drop Wi-Fi, while older Kindred grumble that feeding used to require less cybersecurity expertise."
+  },
+  "The Cult of Mithras": {
+    "content": "In Britain and beyond, the ancient Ventrue Mithras ruled as a god-king for centuries, demanding fealty from princes and knights alike. Recent reports insist that Operation Antigen finally destroyed him, yet the Cult of Mithras still recruits, promising that their lord will rise again when the fires of London cool."
+  },
+  "The Haven of Havana": {
+    "content": "The Anarch-leaning Kindred of Havana have declared their city open to any vampire fleeing a Blood Hunt or the Second Inquisition. The Camarilla calls this reckless; the Red List calls it convenient; the hunted simply call it hope."
+  },
+  "The City of Sin": {
+    "content": "In the chaos following the rise of the Second Inquisition, the Camarilla quietly pulled out of Las Vegas, leaving a vacuum eagerly filled by Anarch gangs and Ministry deal-brokers. Older Kindred grumble that letting neonates control a city built on neon, gambling, and vice is asking for Masquerade disaster."
+  },
+  "Kindred & the World Wars": {
+    "content": "Both World Wars shook the Jyhad: elders fell on foreign battlefields, havens burned in strategic bombings, and entire mortal lineages were lost overnight. Many ancillae from that era still wake screaming from dreams of trenches, firebombs, or mushroom clouds that have nothing to do with sunlight.",
+    "subtitle": "1914 &minus; 1918 & 1939 &minus; 1945",
+    "subtitleClass": "date-line"
+  },
+  "The Cold War Jyhad": {
+    "content": "During the Cold War, Kindred elders used spy agencies, proxy wars, and nuclear fears as new tools in the eternal struggle. Some Ventrue and Nosferatu claim that more vampires died from carefully leaked intelligence and staged defections than ever did from open Sabbat crusades.",
+    "subtitle": "1945 &minus; 1991",
+    "subtitleClass": "date-line"
+  },
+  "The Long Sixties": {
+    "content": "The social upheavals of these two decades revitalized the Anarch Movement, especially in North America and Europe. Many elders blamed that era for the current generation's refusal to respect Tradition; the neonates of the time blame those same elders for trying to weaponize every civil rights march and rock concert.",
+    "subtitle": "1960s &minus; 1970s",
+    "subtitleClass": "date-line"
+  },
+  "Quiet Revolution, Loud Shadows": {
+    "content": "In Quebec, the Quiet Revolution reshaped mortal politics and weakened the old Church's grip. Sabbat and Camarilla alike exploited the chaos, and some stories claim that certain reforms, parties, and scandals were sparked by whispered arguments between Lasombra priests and Ventrue technocrats.",
+    "subtitle": "1960s &minus; 1970s",
+    "subtitleClass": "date-line"
+  },
+  "Thin-Blood Cults": {
+    "content": "Groups like the Ashfinders see thin-bloods not as mistakes but as harbingers or tools, brewing alchemical drugs from ash and vitae. Whether these cults seek transcendence, profit, or oblivion varies from city to city, but even the Camarilla's most jaded Harpies shudder at the idea of powdered elder in a nightclub pill."
+  },
+  "The Scene": {
+    "content": "In the cracks between sects, a black market called \"the Scene\" trades in blood magic, thin-blood formulas, and forbidden rituals. Those who deal in these sigils and concoctions insist it's all just business; princes who discover such markets in their domains tend to respond with very personal executions."
+  },
+  "Cross-Border Domains": {
+    "content": "Along borders like Windsor-Detroit, Buffalo-Niagara, and the Quebec-Vermont frontier, mortal customs checkpoints mean little to the Damned. Some princes claim full authority on both sides; others grudgingly respect invisible lines that even the Beast seems to sense when crossing from one hunting ground to another."
+  },
+  "The Great Chicago Fire": {
+    "content": "Some Kindred blame the Great Chicago Fire on an attempt to destroy an ancient vampire. According to one popular legend, the city's vampires started the blaze to wipe out a sleeping methuselah beneath Chicago — and to cover their tracks. Whether or not that's true, the fire destroyed several elder havens and reshaped the power balance of Chicago's Kindred society overnight.",
+    "subtitle": "1871",
+    "subtitleClass": "date-line"
+  },
+  "The Fall of the Berlin Wall": {
+    "content": "When the Berlin Wall fell, it wasn't just a mortal revolution &mdash; it sparked a war among Kindred. West Berlin's Camarilla and East Berlin's Sabbat had glared at each other across the Wall for decades. On the night it came down, pent-up vampiric rivalries exploded: princes and archbishops were assassinated, elders vanished, and the streets ran red. The Camarilla emerged victorious in Berlin, but the city's Kindred still tell grim stories about those nights of chaos.",
+    "subtitle": "1989",
+    "subtitleClass": "date-line"
+  },
+  "The Fall of London": {
+    "content": "After centuries under Camarilla rule, London fell to the Second Inquisition's flames in the early 2010s. Hunters coordinated by British intelligence struck vampire havens across the city, forcing the surviving Kindred to flee or face final death. The longtime Prince of London, a legendary elder called Mithras, was presumed destroyed years earlier &mdash; and without him, the Camarilla in London stood little chance. Rumors persist, however, that Mithras's story did not end there.",
+    "subtitle": "2012",
+    "subtitleClass": "date-line"
+  },
+  "The Battle of New York": {
+    "content": "The Camarilla launched a sweeping offensive to reclaim New York City from the Sabbat. After years of secret planning &mdash; and taking advantage of the chaos of that year's other events &mdash; the Camarilla struck hard and fast. The Sabbat's rule in NYC crumbled, and Prince Hellene Panhard took the helm of a restored Camarilla domain. To this night, the sect proudly hails the “Battle of New York” as proof that the Sword of Caine can be beaten back.",
+    "subtitle": "1999",
+    "subtitleClass": "date-line"
+  },
+  "The Shadow Over Montreal": {
+    "content": "For decades Montreal was known as a bastion of the Sabbat &mdash; and a city tainted by infernal rumors. Even after the Sword of Caine emptied its strongholds to wage the Gehenna War, Montreal remains oddly devoid of Camarilla presence. Some whisper that an ancient evil still lurks under Montreal, keeping even the boldest princes from claiming the city. Whether it's superstitious fear or a very real threat, Montreal tonight is a no-man's-land on Camarilla maps."
+  },
+  "The Ashirra": {
+    "content": "In the Muslim world, many vampires do not belong to the Camarilla, the Sabbat, the Hecata, or the Anarchs, but to their own sect: the Ashirra. The Ashirra uphold Islamic traditions and Masquerade laws in domains led by ancient Middle Eastern Kindred who remember nights before Europe had cities. In recent years, the Ashirra have found uneasy common cause with the Camarilla as the Sabbat rampages through their territories in the so-called Gehenna War."
+  },
+  "The Gehenna War": {
+    "content": "Kindred whispers speak of a \"Gehenna War\" raging in the shadows of the Middle East — a fanatical crusade launched by the Sabbat. Hundreds of Sabbat zealots have flocked there, convinced that the End Times are here and determined to hunt down the sleeping Antediluvians before they rise. The Camarilla officially denies involvement, but more than one young vampire has returned from a stint in the Syrian or Iraqi conflict with suspiciously little to say and eyes that have seen too much."
+  },
+  "The Red Question": {
+    "content": "The Red Question is the name of a mysterious Anarch hacker collective that tormented the Camarilla in the 2000s. They spread a “New Manifesto” online, challenging elders' authority and even claiming credit for igniting the 2008 global financial crisis to bankrupt Camarilla elders. Enraged, the Camarilla banned all things Red Question &mdash; and their paranoia about electronic communication tonight is due in no small part to the damage these Anarch hacktivists wrought.",
+    "subtitle": "2001 &minus; 2013",
+    "subtitleClass": "date-line"
+  },
+  "The Circulatory System": {
+    "content": "Among elite Kindred, a clandestine market called the Circulatory System trades in the most precious commodity: blood. Highly placed vampires buy, sell, and traffic mortal vessels with exquisite resonant blood like fine wine. Even thin-blood alchemical elixirs and rare Dhampir vitae can be found — for the right price. It's an open secret in the Camarilla: while they preach caution and humanity, some of its most esteemed members trade lives like cattle to slake their refined palates."
+  },
+  "The Dhampir": {
+    "content": "Kindred scholars insist vampires cannot have living children — but rumors persist of the Dhampir, the half-vampire offspring of thin-bloods. Tales from the 21st century tell of a thin-blooded woman in California who miraculously bore a child, sparking panic among local Kindred. Whether the story is true or just Anarch propaganda, the very idea of a Dhampir — part mortal, part Kindred — has many vampires on edge. After all, what place would such a being have in the Masquerade?"
+  },
+  "The Nictuku": {
+    "content": "The Nosferatu share a terrifying legend about their progenitor, Absimiliard, and his brood of nightmare spawn called the Nictuku. It's said that Absimiliard so hated his get for their beauty that he cursed them with deformity — and created the Nictuku to hunt all Nosferatu unto extinction. Few modern Kindred take this literally, but every so often, a well-hidden Nosferatu disappears, leaving behind only gore and strange claw marks. The Sewer Rats know better than to completely laugh off the old horror stories."
+  },
+  "The Bahari": {
+    "content": "The Bahari are a secretive cult that worships Lilith, the so-called Dark Mother. In Bahari lore, Lilith was Caine's lover and mentor — and perhaps the source of his vampiric powers — and they believe suffering is a path to enlightenment. Bahari cults often operate in cells hidden within mortal occult groups. The Camarilla regards them as dangerous heretics (and a possible threat to the Masquerade), but some Anarchs and Autarkis have been drawn to Lilith's bloody teachings in these tumultuous nights."
+  },
+  "SchreckNet Compromised": {
+    "content": "The Nosferatu's SchreckNet was once the information backbone of global Kindred society — a secret dark web of servers and sites hidden from mortal eyes. That ended in the early 2000s when the Second Inquisition somehow penetrated SchreckNet's encryption. Hunters used its data to burn havens and unmask scores of vampires. In the aftermath, the Camarilla all but outlawed electronic communications, and the Nosferatu retreated into paranoia, vowing never to repeat the mistake. To this night, mentioning “SchreckNet” at Elysium is a quick way to draw suspicious glares from jittery elders.",
+    "subtitle": "2002",
+    "subtitleClass": "date-line"
+  },
+  "The Red List": {
+    "content": "The Camarilla's Inner Circle maintains a secret dossier of the most wanted Kindred in the world, known informally as the Red List. Vampires on this list — dubbed Anathema — are considered so dangerous or notorious that the sect offers great rewards to any who destroy them. Only a handful of elders even know the full list, which changes with the times. Once, names like Dracula and Montano were rumored to be Anathema; tonight, after Theo Bell's betrayal, some suspect he now tops the Red List."
+  },
+  "Theo Bell's Betrayal": {
+    "content": "Theo Bell was a legendary Brujah archon — until he became the Camarilla's most infamous turncoat. At a Camarilla conclave in Prague, Bell shocked everyone by firing a shotgun loaded with dragon's breath rounds into Hardestadt the Elder's chest, incinerating the renowned founder of the Camarilla on the spot. Bell's defection and Hardestadt's death signaled the final break of Clan Brujah from the Camarilla. To the Anarchs, Theo Bell is a hero who stood up to tyranny; to the Ivory Tower, his name is now uttered with venom (and a touch of fear).",
+    "subtitle": "2012",
+    "subtitleClass": "date-line"
+  },
+  "The Burning Times": {
+    "surtitle": "The First Inquisition",
+    "content": "For nearly three centuries, the Inquisition raged throughout Europe. Many Kindred were destroyed, and many more were forced to abandon their holdings and go into hiding. To most Kindred, this was the first time they learned to fear mortals as a threat. A cultural shift took hold, leading to the Tradition of the Masquerade and the formation of the Camarilla.",
+    "subtitle": "1300s &minus; 1500s",
+    "subtitleClass": "date-line"
+  },
+  "The Promise": {
+    "content": "The newly formed Camarilla struck a peculiar bargain with Clan Giovanni in Venice — a pact so secretive it's simply known as the Promise. The Giovanni agreed to stay out of sect politics, and the Camarilla left them to their sinister affairs, under terms rumored to last 500 years. If that's true, the Promise of 1528 will expire in 2028, and many Camarilla elders are growing nervous. What will the necromancers of the Hecata do when they're no longer bound by an ancient truce?",
+    "subtitle": "1528",
+    "subtitleClass": "date-line"
+  },
+  "Werewolves": {
+    "content": "Outside the safety of cities, vampires fear the wrath of the lupines — werewolves who zealously guard their wild territories. A single enraged lupine can tear through a coterie of Kindred in seconds; even elders give rural domains a wide berth unless heavily armed. In places like the Canadian wilderness or the American West, more than a few ambitious vampires have vanished, presumed shredded by claws under a full moon. Remember: the night belongs to the Kindred, but the deep forests belong to something far fiercer."
+  },
+  "Paths of Enlightenment": {
+    "content": "The Sabbat reject human morality entirely — they follow Paths of Enlightenment, esoteric codes that glorify vampiric predation and war. To a Sabbat on a Path, concepts like compassion or Masquerade mean nothing; only the tenets of their Path matter. One might embrace a Path of the Feral Heart, living like a primal beast, while another follows the Path of Caine, seeking godhood through heinous acts. To Camarilla sensibilities, these monsters have truly abandoned all that's left of their humanity — and become something alien in the process."
+  },
+  "The Family Reunion": {
+    "content": "A historic summit in Venice brought together the feuding bloodlines of the so-called Clans of Death: the Giovanni, the Harbingers of Skulls, the Samedi, and other necromancers convened a \"Family Reunion\" to address mutual threats — from Second Inquisition raids to vengeful spirits unleashed by the fall of their founder, Augustus Giovanni. By the conclave's end, they agreed to bury centuries of grudges (and a few remaining hatchets in each other's heads) and emerged as a unified Sect: the Hecata. How long their unity will last is anyone's guess.",
+    "subtitle": "2019",
+    "subtitleClass": "date-line"
+  },
+  "The Stoker Affair": {
+    "content": "To the Kindred of the era, Bram Stoker's &quot;Dracula&quot; was an audacious attempt to shatter the Masquerade by one of their own kind. The hunt for the Kindred calling himself 'Dracula' engulfed the undead courts of Europe during the two decades leading up to the Great War. Ironically, the book would end up strengthening the Masquerade, revealing the folly of the great panic in the decades that followed.",
+    "subtitle": "1860 &minus; 1920",
+    "subtitleClass": "date-line"
+  },
+  "The American Revolution": {
+    "content": "In the War of Independence, Camarilla loyalists and rebellious Kindred turned the New World into a nocturnal battlefield, even forging unholy alliances with Sabbat horrors under the banner of liberty. Blood-soaked battlefields spawned nameless childer roused by carnage only to perish by dawn's cruel light.",
+    "subtitle": "1775 &minus; 1783",
+    "subtitleClass": "date-line"
+  },
+  "The French Revolution": {
+    "content": "Amid Paris's streets “drowned in blood” during the Terror, the old Cainite aristocracy was toppled as young Camarilla Bohemians and frenzied Anarchs &mdash; led by the infamous “Guillotine Virago” feeding at the guillotine &mdash; seized power. Though the Camarilla eventually reclaimed Paris, its authority emerged shaken to the core, haunted by the specter of those revolutionary nights.",
+    "subtitle": "1789 &minus; 1799",
+    "subtitleClass": "date-line"
+  },
+  "Blood and Prejudice": {
+    "content": "Regency London styled itself “the most civilized place in the world,” but beneath the finery flowed a river of prejudice and bad blood between high and lowborn. Aristocratic Ventrue and Lasombra enjoyed extravagant balls and masquerades, while Brujah and Nosferatu skulked in gin dens or among body-snatchers in the moonlit underbelly &mdash; all dancing a delicate line between polite society and the Beast within.",
+    "subtitle": "1800 &minus; 1830",
+    "subtitleClass": "date-line"
+  },
+  "The Victorian Era": {
+    "content": "At the height of Queen Victoria's empire, British Kindred drank deep of imperial blood. London became Mithras's gilded court &mdash; a methuselah prince presiding over glorious, cutthroat immortal courtiers who fed with entitled impunity. Victorian progress and propriety masked dark contradictions: even as polite society extolled reason, the Kindred felt the primal monster stirring beneath their civilized veneer, much as the Empire itself gorged on colonies under a facade of enlightenment.",
+    "subtitle": "1837 &minus; 1901",
+    "subtitleClass": "date-line"
+  },
+  "The Last Days of the Russian Empire": {
+    "content": "As the Romanovs staged lavish balls in St. Petersburg, Kindred elders fattened themselves on the old order's pomp. But revolution brewed in blood: Brujah idealists and Anarch firebrands rose among workers and intellectuals, vowing to cast down princes and czars alike. When Czar Nicholas II's coronation unleashed a deadly omen (the Khodynka tragedy), even prescient vampires took it as a sign &mdash; some fled the realm before the coming inferno, as an epoch of absolute rule crumbled into chaos and revolution.",
+    "subtitle": "1861 &minus; 1917",
+    "subtitleClass": "date-line"
+  },
+  "The Roaring Twenties": {
+    "content": "In the jazz-fueled aftermath of the Great War and pandemic, mortals lived as if tomorrow might never come &mdash; an era of intoxicating excess that left cynical blood on the tongue. Kindred across America enjoyed a tenuous peace: West Coast Anarchs ruled free cities, and Camarilla princes in places like Chicago held off open conflict. Yet darkness gathered behind the celebratory facade &mdash; the Anarchs quietly plotted, the Sabbat rallied in secret, and an ugliness in mortal hearts hinted that the next great war was already gestating in the shadows.",
+    "subtitle": "1920s",
+    "subtitleClass": "date-line"
+  },
+  "The Great Depression": {
+    "content": "When the stock market crashed, even centuries-old elders saw their fortunes and schemes collapse in a single night &mdash; many a hapless ghoul met Final Death at the hands of a furious master on Black Thursday. In the decade of despair that followed, some Kindred languished as badly as the kine, but others thrived on the chaos. Vampire financiers and bootleggers amassed power by exploiting soup-lines and speakeasies, waging bloody proxy wars behind the scenes. The press marveled at gangland feuds between mobsters like Capone and Luciano, never realizing that hidden Kindred factions pulled strings and spilled blood of their own in a parallel, unseen war for New York's soul.",
+    "subtitle": "1929 &minus; 1939",
+    "subtitleClass": "date-line"
+  },
+  "World War II": {
+    "content": "The deadliest conflict in human history ravaged Kindred domains as well &mdash; entire vampire communities were uprooted or obliterated by the war's fires. While a few low-Humanity licks gorged on the endless casualties and worked as spies for mortal armies, most vampires cowered helplessly against the Blitz and carpet bombings. Nazi hunters combing Europe's cities for hidden Jews occasionally dragged ancient Kindred into the daylight by accident. And when humanity unveiled the atomic bomb, even the eldest vampires trembled &mdash; for a moment some feared an Antediluvian's wrath, before realizing this atrocity was wrought by mortal hands alone. Many elders met Final Death in the war, leaving young survivors to inherit the ashes.",
+    "subtitle": "1939 &minus; 1945",
+    "subtitleClass": "date-line"
+  },
+  "The Post-War Period": {
+    "content": "In war's wake, the world split between East and West &mdash; and so did the Kindred. As the Iron Curtain descended, communication between Soviet-domain vampires and their Western counterparts fell into an eerie silence. Across the Atlantic, the United States surged in wealth; opportunistic Kindred flocked to America's gleaming post-war cities to drink in the optimism (and plenty of fresh blood) of the new consumer age. In Europe, power vacuums left by all the elder vampires lost in the war were swiftly filled by ambitious young Kindred. The Camarilla's Ivory Tower stood, but its foundations were forever altered &mdash; a new world now belonged to a new generation of the undead, even as an uneasy Cold War quiet settled over the nights.",
+    "subtitle": "1945 &minus; 1950",
+    "subtitleClass": "date-line"
+  },
+  "The Turbulent Sixties": {
+    "content": "A cultural earthquake shook mortals and Kindred alike. Elder vampires awoke from brief torpor to find a world transformed &mdash; mankind had split the atom, reached into space, and shed old traditions at a pace even immortals found disorienting. The decade began as a golden age for Anarchs: California's Anarch Free State flourished, with young Kindred openly mingling with free-spirited hippies and student radicals in a haze of music and blood. To the Camarilla elders, this “New Age” reeked of chaos; by 1968 Prince Lodin's paranoia in Chicago ignited into open war against Anarch rebels, and Sabbat packs took advantage by seizing Detroit. Meanwhile, the era's spiritual experimentation made easy prey of mortal seekers &mdash; a cunning vampire could play guru and lead a blood-soaked cult of love and LSD-addled devotion. The Masquerade grew ever more fragile as humanity's light burned brighter, heralding dangers and revelations yet to come.",
+    "subtitle": "1960s",
+    "subtitleClass": "date-line"
+  },
+  "The Night of Bloody Tears": {
+    "content": "A Camarilla “Blood Wedding” meant to unite London and Paris instead became the Night of Bloody Tears &mdash; a catastrophic slaughter in which roughly one-third of the gathered Kindred were destroyed, the alliance collapsing in blood and betrayal.",
+    "subtitle": "1822",
+    "subtitleClass": "date-line"
+  },
+  "The Montmartre Massacre": {
+    "content": "To curb Paris's dangerously swollen Kindred population, Prince François Villon quietly culled his city's young vampires &mdash; escalating from secret killings to open Blood Hunts and the annihilation of entire fledgling coteries in Montmartre &mdash; an infamous purge remembered as the Montmartre Massacre.",
+    "subtitle": "1830s",
+    "subtitleClass": "date-line"
+  },
+  "The Great Unification": {
+    "content": "Berlin's iron-fisted Prince Gustav Breidenstein launched the Great Unification, a brutal campaign to conquer neighboring domains by force. His “unification” was a violent spectacle of threats, coercion, and sadistic executions that expanded Camarilla power even as it sowed terror and lasting resentment.",
+    "subtitle": "1861 &minus; 1868",
+    "subtitleClass": "date-line"
+  },
+  "The Trial of Mirrors": {
+    "content": "The Camarilla's attempt to put an ancient methuselah on trial in Washington, D.C. unraveled into the Trial of Mirrors &mdash; a bloody farce of false faces and paranoia. Justicar Michaelis's grand spectacle ended in chaos, with elders turning on phantoms and allies alike, leaving the sect humiliated and shamed.",
+    "subtitle": "1902",
+    "subtitleClass": "date-line"
+  },
+  "The Bloodhunts of Prague": {
+    "content": "Twice in the 20th century, Prague's undead court erupted into open war known as the Bloodhunts of Prague. During World War II, when the Nosferatu Prince fell to Nazi fire, Ventrue conspirators seized power and declared a Blood Hunt that nearly wiped out the city's Nosferatu clan. Decades later, amid the Prague Spring, rebellious Anarchs led a six-month purge against the old guard, turning the streets of Prague into another secret battleground of betrayal and revenge.",
+    "subtitle": "1939 &minus; 1944 & 1968",
+    "subtitleClass": "date-line"
+  },
+  "The Birth of the Anarch Free States": {
+    "content": "In Los Angeles, the Second Anarch Revolt exploded in a fiery uprising that toppled the Camarilla Prince and birthed the Anarch Free States. This victory became legend and sparked hope among the oppressed, but its reality was far grimmer &mdash; brutal infighting, mortal casualties, and treacherous deals lurking behind the romanticized revolution.",
+    "subtitle": "1944",
+    "subtitleClass": "date-line"
+  },
+  "The Moonlit Crusade": {
+    "content": "In the wake of the Anarch Revolt, Camarilla elders across America proclaimed a Moonlit Crusade &mdash; a grand war against “the werewolf threat” meant to unite young Kindred through fear. Countless neonates eagerly joined, only to be sacrificed in futile battles against real and imagined foes; the Crusade collapsed in disgrace as the elders' lies and betrayals came to light, a cynical episode quietly erased from Camarilla history.",
+    "subtitle": "1948 &minus; 1955",
+    "subtitleClass": "date-line"
+  },
+  "The Forgotten Massacre": {
+    "content": "As thin-blooded vampires (the Duskborn) began to appear in significant numbers, the Camarilla responded with a secret massacre. Seen as an ominous curse of the end times, these weak-blooded fledglings &mdash; and even their sires &mdash; were systematically hunted down and burned, a purge so complete and hush-hushed that modern Kindred rarely speak of the Forgotten Massacre that nearly wiped out the Duskborn.",
+    "subtitle": "1980s &minus; 1990s",
+    "subtitleClass": "date-line"
+  },
+  "The Blood Gods": {
+    "content": "Among ancillae, Blood God is shorthand for methuselahs so close to Caine in lineage that their vitae might as well be divine poison. They are each the direct descendant of an Antediluvian, and each has existed for well over a millenium. Analysts point to a handful of Fourth Generation monsters whose cults and powers fit the stories, while voices superstitious of Noddist folklore insist that it is these beings who Beckon the eldest Kindred east to fight unseen wars."
+  },
+  "The Baali": {
+    "content": "The Baali are an almost extinct clan of infernalist vampires who once served entities they insisted were older than Caine. THe few surviving Baali hide in other clans, running doomsday cults, corrupt charities and edgy occult circles. Princes confronted with too many demonic rumors in their domains often decide it is safer to blame the Baali and order a quiet purge than to investigate too closely."
+  },
+  "Wights": {
+    "content": "Camarilla slang for a vampire whose Humanity has finally collapsed entirely, leaving only the Beast riding a corpse. Princes like to blame any inexplicable Masquerade breach on feral out-of-town wights, but Sabbat veterans point out that plenty of so-called wights still remember exactly who wronged them and show a disturbingly focused preference in their rampages."
+  },
+  "The Daughters of Cacophony": {
+    "content": "The Daughters of Cacophony are a scattered bloodline of song-haunted vampires whose voices can fracture glass, moods and sometimes minds; some sources treat them as Toreador offshoots, others as Malkavians who have learned to channel their curse through music, and more than one prince has quietly banned opera in Elysium after a Daughter hit a note that sent the whole court into frenzy."
+  }
+}

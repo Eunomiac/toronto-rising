@@ -1,0 +1,12 @@
+# Static assets directory
+# Files placed here will be copied to the root of the dist folder during build
+#
+# Examples:
+# - public/fonts/your-font.woff2
+# - public/images/background.jpg
+# - public/favicon.ico
+#
+# Reference them in HTML/CSS as:
+# - /VTM-Cursor/fonts/your-font.woff2
+# - /VTM-Cursor/images/background.jpg
+# - /VTM-Cursor/favicon.ico
