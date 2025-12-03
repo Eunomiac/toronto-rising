@@ -173,7 +173,7 @@
     "images": [
       {
         "src": "clanNosferatuGold.webp",
-        "class": "image-left animate-slide-left-out"
+        "class": "image-left animate-slide-left-out image-narrow"
       },
       {
         "src": "clanToreadorGold.webp",

@@ -1301,11 +1301,9 @@ function createMasterTimeline(container, totalTimelineDuration, timingInfo) {
 
   const master = gsap.timeline({
     onComplete: () => {
-      // After fade out, get next rumor and repeat
-      setTimeout(() => {
-        const nextRumor = getNextRumor(rumorStack, rumorsData, debugMode);
-        displayRumor(nextRumor);
-      }, ANIMATION_CONFIG.transition.nextRumorDelayMs);
+      // After fade out, get next rumor and repeat immediately
+      const nextRumor = getNextRumor(rumorStack, rumorsData, debugMode);
+      displayRumor(nextRumor);
     },
   });
 
