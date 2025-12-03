@@ -133,16 +133,302 @@ const ANIMATION_REGISTRY = {
       return child;
     },
   },
-  "animate-slide-down": {
+  "animate-slide-right-down": {
     image: (image, element, masterLabels, classes, timing) => {
       const timingData = {startTime: 0};
       const child = prepareFixedTimeline(timingData);
 
       // Set configurable values
-      const startingXPercent = -180; // translate(-80%, 100%)
-      const endingXPercent = 130;
-      const startingYPercent = -175; // translate(-180%, 50%)
-      const endingYPercent = -25;
+      const startingXPercent = -150; // translate(-80%, 100%)
+      const endingXPercent = 50;
+      const startingYPercent = -150; // translate(-180%, 50%)
+      const endingYPercent = 0;
+
+      // Duration values, as percentages of 100
+      const fadeInDuration = 35;
+      const fadeOutDuration = 35;
+
+      gsap.set(image, {
+        opacity: 0,
+        scale: 0.5,
+        filter: "brightness(0.25)"
+      });
+
+      // Start fading in about 5% into master timeline
+      child.to(image, {
+        opacity: 1,
+        scale: 1,
+        filter: "brightness(1)",
+        duration: fadeInDuration,
+        ease: "none",
+        onStart: () => {
+          console.log(`Child Timeline Fade-In START: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        },
+        onComplete: () => {
+          console.log(`Child Timeline Fade-In COMPLETE: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        }
+      }, 5);
+
+      // Slide animation, which should span the full length of the master timeline
+      child.fromTo(image, {
+        xPercent: startingXPercent,
+        yPercent: startingYPercent
+      }, {
+        xPercent: endingXPercent,
+        yPercent: endingYPercent,
+        duration: 100,
+        ease: "none",
+        onStart: () => {
+          console.log(`Child Timeline Slide START: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        },
+        onComplete: () => {
+          console.log(`Child Timeline Slide COMPLETE: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        }
+      }, 0);
+
+      // Start fading out as soon as the rest of the content has finished fading in
+      child.to(image, {
+        opacity: 0,
+        scale: 0.5,
+        filter: "brightness(0.25)",
+        duration: fadeOutDuration,
+        ease: "none",
+        onStart: () => {
+          console.log(`Child Timeline Fade-Out START: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        },
+        onComplete: () => {
+          console.log(`Child Timeline Fade-Out COMPLETE: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        }
+      }, timing.fadeOutStart + 10);
+
+      return child;
+    }
+  },
+  "animate-slide-left-up": {
+
+    image: (image, element, masterLabels, classes, timing) => {
+      const timingData = {startTime: 0};
+      const child = prepareFixedTimeline(timingData);
+
+      // Set configurable values
+      const startingXPercent = 50; // translate(-80%, 100%)
+      const endingXPercent =  -150;
+      const startingYPercent = 0; // translate(-180%, 50%)
+      const endingYPercent = -150;
+
+      // Duration values, as percentages of 100
+      const fadeInDuration = 35;
+      const fadeOutDuration = 35;
+
+      gsap.set(image, {
+        opacity: 0,
+        scale: 0.5,
+        filter: "brightness(0.25)"
+      });
+
+      // Start fading in about 5% into master timeline
+      child.to(image, {
+        opacity: 1,
+        scale: 1,
+        filter: "brightness(1)",
+        duration: fadeInDuration,
+        ease: "none",
+        onStart: () => {
+          console.log(`Child Timeline Fade-In START: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        },
+        onComplete: () => {
+          console.log(`Child Timeline Fade-In COMPLETE: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        }
+      }, 5);
+
+      // Slide animation, which should span the full length of the master timeline
+      child.fromTo(image, {
+        xPercent: startingXPercent,
+        yPercent: startingYPercent
+      }, {
+        xPercent: endingXPercent,
+        yPercent: endingYPercent,
+        duration: 100,
+        ease: "none",
+        onStart: () => {
+          console.log(`Child Timeline Slide START: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        },
+        onComplete: () => {
+          console.log(`Child Timeline Slide COMPLETE: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        }
+      }, 0);
+
+      // Start fading out as soon as the rest of the content has finished fading in
+      child.to(image, {
+        opacity: 0,
+        scale: 0.5,
+        filter: "brightness(0.25)",
+        duration: fadeOutDuration,
+        ease: "none",
+        onStart: () => {
+          console.log(`Child Timeline Fade-Out START: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        },
+        onComplete: () => {
+          console.log(`Child Timeline Fade-Out COMPLETE: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        }
+      }, timing.fadeOutStart + 10);
+
+      return child;
+    }
+  },
+  "animate-slide-left-out": {
+    image: (image, element, masterLabels, classes, timing) => {
+      const timingData = {startTime: 0};
+      const child = prepareFixedTimeline(timingData);
+
+      // Set configurable values
+      const startingXPercent = -75; // START: translate(-50%, -75%)
+      const endingXPercent = -250;
+      const startingYPercent = -100;
+      const endingYPercent = -200;
+
+      // Duration values, as percentages of 100
+      const fadeInDuration = 35;
+      const fadeOutDuration = 35;
+
+      gsap.set(image, {
+        opacity: 0,
+        scale: 0.5,
+        filter: "brightness(0.25)"
+      });
+
+      // Start fading in about 5% into master timeline
+      child.to(image, {
+        opacity: 1,
+        scale: 1,
+        filter: "brightness(1)",
+        duration: fadeInDuration,
+        ease: "none",
+        onStart: () => {
+          console.log(`Child Timeline Fade-In START: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        },
+        onComplete: () => {
+          console.log(`Child Timeline Fade-In COMPLETE: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        }
+      }, 5);
+
+      // Slide animation, which should span the full length of the master timeline
+      child.fromTo(image, {
+        xPercent: startingXPercent,
+        yPercent: startingYPercent
+      }, {
+        xPercent: endingXPercent,
+        yPercent: endingYPercent,
+        duration: 100,
+        ease: "none",
+        onStart: () => {
+          console.log(`Child Timeline Slide START: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        },
+        onComplete: () => {
+          console.log(`Child Timeline Slide COMPLETE: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        }
+      }, 0);
+
+      // Start fading out as soon as the rest of the content has finished fading in
+      child.to(image, {
+        opacity: 0,
+        scale: 0.5,
+        filter: "brightness(0.25)",
+        duration: fadeOutDuration,
+        ease: "none",
+        onStart: () => {
+          console.log(`Child Timeline Fade-Out START: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        },
+        onComplete: () => {
+          console.log(`Child Timeline Fade-Out COMPLETE: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        }
+      }, timing.fadeOutStart + 10);
+
+      return child;
+    }
+  },
+  "animate-slide-right-out": {
+
+    image: (image, element, masterLabels, classes, timing) => {
+      const timingData = {startTime: 0};
+      const child = prepareFixedTimeline(timingData);
+
+      // Set configurable values
+      const startingXPercent = -25;
+      const endingXPercent = 150;
+      const startingYPercent = -50;
+      const endingYPercent = 50;
+
+      // Duration values, as percentages of 100
+      const fadeInDuration = 35;
+      const fadeOutDuration = 35;
+
+      gsap.set(image, {
+        opacity: 0,
+        scale: 0.5,
+        filter: "brightness(0.25)"
+      });
+
+      // Start fading in about 5% into master timeline
+      child.to(image, {
+        opacity: 1,
+        scale: 1,
+        filter: "brightness(1)",
+        duration: fadeInDuration,
+        ease: "none",
+        onStart: () => {
+          console.log(`Child Timeline Fade-In START: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        },
+        onComplete: () => {
+          console.log(`Child Timeline Fade-In COMPLETE: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        }
+      }, 5);
+
+      // Slide animation, which should span the full length of the master timeline
+      child.fromTo(image, {
+        xPercent: startingXPercent,
+        yPercent: startingYPercent
+      }, {
+        xPercent: endingXPercent,
+        yPercent: endingYPercent,
+        duration: 100,
+        ease: "none",
+        onStart: () => {
+          console.log(`Child Timeline Slide START: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        },
+        onComplete: () => {
+          console.log(`Child Timeline Slide COMPLETE: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        }
+      }, 0);
+
+      // Start fading out as soon as the rest of the content has finished fading in
+      child.to(image, {
+        opacity: 0,
+        scale: 0.5,
+        filter: "brightness(0.25)",
+        duration: fadeOutDuration,
+        ease: "none",
+        onStart: () => {
+          console.log(`Child Timeline Fade-Out START: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        },
+        onComplete: () => {
+          console.log(`Child Timeline Fade-Out COMPLETE: ${gsap.globalTimeline.time() - timingData.startTime}`);
+        }
+      }, timing.fadeOutStart + 10);
+
+      return child;
+    }
+  },
+  "animate-center": {
+    image: (image, element, masterLabels, classes, timing) => {
+      const timingData = {startTime: 0};
+      const child = prepareFixedTimeline(timingData);
+
+      // Set configurable values
+      const startingXPercent = -50;
+      const endingXPercent = -50;
+      const startingYPercent = -50;
+      const endingYPercent = -50;
 
       // Duration values, as percentages of 100
       const fadeInDuration = 35;
@@ -1483,3 +1769,84 @@ if (import.meta.env.DEV) {
   // Disable debug mode in production
   debugMode = false;
 }
+
+// Click anywhere to skip to next rumor
+// Kills current timeline and performs a quick fade-out before showing next rumor
+document.addEventListener("click", (event) => {
+  // Don't trigger if clicking on debug buttons (they have their own handlers)
+  if (event.target.id === "pause-btn" || event.target.id === "debug-btn") {
+    return;
+  }
+
+  if (!currentTimeline) {
+    // No timeline exists, do nothing
+    return;
+  }
+
+  // Kill the current timeline to stop all animations
+  currentTimeline.kill();
+  currentTimeline = null;
+
+  // Reset global timeScale to normal
+  gsap.globalTimeline.timeScale(ANIMATION_CONFIG.globalTimeScale);
+
+  const container = document.getElementById("rumor-container");
+
+  // Create a simple, short fade-out animation (0.5 seconds)
+  gsap.to(container, {
+    opacity: 0,
+    duration: 0.5,
+    ease: "power2.in",
+    onComplete: () => {
+      // Clear all DOM elements in preparation for next rumor
+      const existingSurtitle = document.getElementById("rumor-surtitle");
+      const existingSubtitle = document.getElementById("rumor-subtitle");
+      const titleElement = document.getElementById("rumor-title");
+      const contentElement = document.getElementById("rumor-content");
+
+      // Clear inline styles from all animated elements before removing/clearing them
+      // Get all word elements that might have been animated
+      const allWordElements = document.querySelectorAll(".word");
+      allWordElements.forEach((word) => {
+        gsap.set(word, { clearProps: "all" });
+      });
+
+      // Clear styles from image elements
+      const imageElements = document.querySelectorAll(".content-image");
+      imageElements.forEach((img) => {
+        gsap.set(img, { clearProps: "all" });
+      });
+
+      // Clear styles from container and content elements
+      if (container) {
+        gsap.set(container, { clearProps: "all" });
+      }
+      if (existingSurtitle) {
+        gsap.set(existingSurtitle, { clearProps: "all" });
+        existingSurtitle.remove();
+      }
+      if (existingSubtitle) {
+        gsap.set(existingSubtitle, { clearProps: "all" });
+        existingSubtitle.remove();
+      }
+      if (titleElement) {
+        gsap.set(titleElement, { clearProps: "all" });
+        titleElement.innerHTML = "";
+      }
+      if (contentElement) {
+        gsap.set(contentElement, { clearProps: "all" });
+        // Remove all child elements (including images)
+        while (contentElement.firstChild) {
+          contentElement.removeChild(contentElement.firstChild);
+        }
+      }
+
+      // Reset container opacity for next rumor (will be set fresh by displayRumor)
+      gsap.set(container, { opacity: 1 });
+
+      // Proceed immediately to next rumor
+      const nextRumor = getNextRumor(rumorStack, rumorsData, debugMode);
+      displayRumor(nextRumor);
+    }
+  });
+});

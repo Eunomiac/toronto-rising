@@ -1,5 +1,48 @@
 {
 
+  "Lasombra & Tremere": {
+    "surtitle": "Clan Rivalries",
+    "content": "The Lasombra consider their control of faith and shadow to be a birthright; the Tremere consider every mystery a problem to be dissected and codified. Whenever these two clans contest influence over churches, occult societies, or universities, the resulting shadow wars leave mortal institutions strangely hollowed out and spiritually burned.",
+    "surtitleClass": "clan-rivalries",
+    "images": [
+      {
+        "src": "clanLasombraGold.webp",
+        "class": "image-left animate-slide-left-out"
+      },
+      {
+        "src": "clanTremereGold.webp",
+        "class": "image-right animate-slide-right-out"
+      }
+    ]
+  },
+
+  "Giovanni & Harbingers": {
+    "surtitle": "Clan Rivalries",
+    "content": "The Harbingers of Ashur claim to be Cappadocians who clawed their way out of the lands of the dead purely to ruin the Giovanni; the Venetian necromancers call that a fairy tale, but Giovanni assets and bloodlines have a habit of collapsing without mortal explanation whenever a skull-masked stranger passes through a city.",
+    "surtitleClass": "clan-rivalries",
+    "images": [
+      {
+        "src": "clanGiovanniWhite.webp",
+        "class": "image-left animate-slide-left-out"
+      },
+      {
+        "src": "clanHarbingersWhite.webp",
+        "class": "image-right animate-slide-right-out image-narrow"
+      }
+    ]
+  },
+  "Ceri": {
+    "surtitle": "The Blood God",
+    "surtitleClass": "blood-god",
+    "titleClass": "blood-god",
+    "content": "Ceri is rumored to be a Fourth Generation Toreador who treats whole cities as performance pieces, sometimes appearing as a tall, ghost-pale woman, other times as a bone-white spider dragging itself through old catacombs. In the Gehenna War, her network of informants, the Cartographers, supposedly sells maps of methuselah movements to whichever side has amused her most that year.",
+    "images": [
+      {
+        "src": "clanToreadorIvory.webp",
+        "class": "image-left animate-slide-right-down"
+      }
+    ]
+  },
   "The Fall of the Prime Chantry": {
     "surtitle": "Vienna",
     "content": "The Tremere's fabled Prime Chantry in Vienna survived religious wars, Nazi looters, and Sabbat crusades, only to be erased by a modern drone strike. The Clan of Warlocks publicly blames the Second Inquisition, but hushed reports suggest the blast coincided suspiciously with internal Thaumaturgic experiments gone catastrophically wrong.",
@@ -9,7 +52,31 @@
     "images": [
       {
         "src": "clanTremereGold.webp",
-        "class": "image-left animate-slide-down"
+        "class": "image-left animate-slide-left-up"
+      }
+    ]
+  },
+  "The Baron": {
+    "content": "A baron is the Anarch Movement's equivalent to a Camarilla prince: the highest Anarch authority in a city. As the Anarchs believe in a system that awards merit, barons tend to vary in age and experience far more than princes, who &mdash; at least before the Beckoning &mdash; were almost exclusively elders. Two mysterious Kindred, known collectively as **the Good Doctors**, currently share the title of Baron of Toronto.",
+    "images": [
+      {
+        "src": "sectAnarchsRed.webp",
+        "class": "image-center animate-center image-narrow"
+      }
+    ]
+  },
+  "Brujah & Ventrue": {
+    "surtitle": "Clan Rivalries",
+    "content": "When Ventrue-controlled Rome sacked Carthage, the greatest of Clan Brujah's achievements, they sparked a rivalry whose age is only surpassed by the feud between Clan Ravnos and Clan Gangrel. With Clan Ventrue embodying the status quo and Clan Brujah rebelling against the establishment, their mutual disdain has found no shortage of fuel over the centuries.",
+    "surtitleClass": "clan-rivalries",
+    "images": [
+      {
+        "src": "clanBrujahRed.webp",
+        "class": "image-left animate-slide-left-out"
+      },
+      {
+        "src": "clanVentrueGold.webp",
+        "class": "image-right animate-slide-right-out"
       }
     ]
   },
@@ -39,15 +106,6 @@
     "content": "Toronto's PATH network weaves beneath the downtown core in a labyrinth of shops and corridors that never see the sun. The largest subterranean commercial complex in the world, Kindred gossip suggests that more deals between ancillae are struck in empty food courts after closing than in all the official Elysia above.",
     "surtitleClass": "location"
   },
-  "The Baron": {
-    "content": "A baron is the Anarch Movement's equivalent to a Camarilla prince: the highest Anarch authority in a city. As the Anarchs believe in a system that awards merit, barons tend to vary in age and experience far more than princes, who &mdash; at least before the Beckoning &mdash; were almost exclusively elders. Two mysterious Kindred, known collectively as **the Good Doctors**, currently share the title of Baron of Toronto.",
-    "images": [
-      {
-        "src": "sectAnarchsRed.webp",
-        "class": "image-center animate-center image-narrow"
-      }
-    ]
-  },
   "Lasombra & Ventrue": {
     "surtitle": "Clan Rivalries",
     "content": "The Ventrue and the Lasombra are as alike as they are polar opposites: As the Ventrue rule the Camarilla, the Lasombra once ruled the Sabbat. Both Embrace the capable and the ambitious; both prize power above all else; and both consider themselves the true masters of Dominate. Their hatred for each other is matched only by their grudging respect for their rival kings among the Kindred.",
@@ -55,26 +113,11 @@
     "images": [
       {
         "src": "clanLasombraGold.webp",
-        "class": "image-left animate-slide-right"
+        "class": "image-left animate-slide-left-out"
       },
       {
         "src": "clanVentrueGold.webp",
-        "class": "image-right animate-slide-left"
-      }
-    ]
-  },
-  "Brujah & Ventrue": {
-    "surtitle": "Clan Rivalries",
-    "content": "When Ventrue-controlled Rome sacked Carthage, the greatest of Clan Brujah's achievements, they sparked a rivalry whose age is only surpassed by the feud between Clan Ravnos and Clan Gangrel. With Clan Ventrue embodying the status quo and Clan Brujah rebelling against the establishment, their mutual disdain has found no shortage of fuel over the centuries.",
-    "surtitleClass": "clan-rivalries",
-    "images": [
-      {
-        "src": "clanBrujahRed.webp",
-        "class": "image-left animate-slide-right"
-      },
-      {
-        "src": "clanVentrueGold.webp",
-        "class": "image-right animate-slide-left"
+        "class": "image-right animate-slide-right-out"
       }
     ]
   },
@@ -85,11 +128,11 @@
     "images": [
       {
         "src": "clanTremereGold.webp",
-        "class": "image-left animate-slide-right"
+        "class": "image-left animate-slide-left-out"
       },
       {
         "src": "clanTzimisceRed.webp",
-        "class": "image-right animate-slide-left"
+        "class": "image-right animate-slide-right-out"
       }
     ]
   },
@@ -100,11 +143,11 @@
     "images": [
       {
         "src": "clanBanuHaqimGold.webp",
-        "class": "image-left animate-slide-right"
+        "class": "image-left animate-slide-left-out"
       },
       {
         "src": "clanTremereGold.webp",
-        "class": "image-right animate-slide-left"
+        "class": "image-right animate-slide-right-out"
       }
     ]
   },
@@ -115,11 +158,11 @@
     "images": [
       {
         "src": "clanGangrelRed.webp",
-        "class": "image-left animate-slide-right"
+        "class": "image-left animate-slide-left-out"
       },
       {
         "src": "clanRavnosRed.webp",
-        "class": "image-right animate-slide-left"
+        "class": "image-right animate-slide-right-out"
       }
     ]
   },
@@ -130,11 +173,11 @@
     "images": [
       {
         "src": "clanNosferatuGold.webp",
-        "class": "image-left animate-slide-right"
+        "class": "image-left animate-slide-left-out"
       },
       {
         "src": "clanToreadorGold.webp",
-        "class": "image-right animate-slide-left"
+        "class": "image-right animate-slide-right-out"
       }
     ]
   },
@@ -145,11 +188,11 @@
     "images": [
       {
         "src": "clanBrujahRed.webp",
-        "class": "image-left animate-slide-right"
+          "class": "image-left animate-slide-left-out"
       },
       {
         "src": "clanTremereGold.webp",
-        "class": "image-right animate-slide-left"
+        "class": "image-right animate-slide-right-out"
       }
     ]
   },
@@ -160,11 +203,11 @@
     "images": [
       {
         "src": "clanBanuHaqimGold.webp",
-        "class": "image-left animate-slide-right"
+        "class": "image-left animate-slide-left-out"
       },
       {
         "src": "clanMinistryRed.webp",
-        "class": "image-right animate-slide-left"
+        "class": "image-right animate-slide-right-out"
       }
     ]
   },
@@ -179,36 +222,6 @@
       }
     ]
   },
-  "Lasombra & Tremere": {
-    "surtitle": "Clan Rivalries",
-    "content": "The Lasombra consider their control of faith and shadow to be a birthright; the Tremere consider every mystery a problem to be dissected and codified. Whenever these two clans contest influence over churches, occult societies, or universities, the resulting shadow wars leave mortal institutions strangely hollowed out and spiritually burned.",
-    "surtitleClass": "clan-rivalries",
-    "images": [
-      {
-        "src": "clanLasombraGold.webp",
-        "class": "image-left animate-slide-right"
-      },
-      {
-        "src": "clanTremereGold.webp",
-        "class": "image-right animate-slide-left"
-      }
-    ]
-  },
-  "Giovanni & Harbingers": {
-    "surtitle": "Clan Rivalries",
-    "content": "The Harbingers of Ashur claim to be Cappadocians who clawed their way out of the lands of the dead purely to ruin the Giovanni; the Venetian necromancers call that a fairy tale, but Giovanni assets and bloodlines have a habit of collapsing without mortal explanation whenever a skull-masked stranger passes through a city.",
-    "surtitleClass": "clan-rivalries",
-    "images": [
-      {
-        "src": "clanGiovanniWhite.webp",
-        "class": "image-left animate-slide-right"
-      },
-      {
-        "src": "clanHarbingerWhite.webp",
-        "class": "image-right animate-slide-left"
-      }
-    ]
-  },
   "The Week of Nightmares": {
     "content": "During what would be seen by many as the start of Gehenna, the Ravnos Antediluvian Zapathasura awakened from torpor and, after a long and bloody conflict, was defeated by a powerful alliance of vampires, werewolves and mages. At the moment of his death, Zapathasura unleashed a psychic scream that drove every Ravnos into a cannibalistic frenzy, nearly destroying the entire clan in a single week.",
     "subtitle": "1999",
@@ -216,7 +229,7 @@
     "images": [
       {
         "src": "clanRavnosIvory.webp",
-        "class": "image-center animate-slide-down"
+        "class": "image-center animate-slide-right-down"
       }
     ]
   },
@@ -227,7 +240,7 @@
     "images": [
       {
         "src": "sectAnarchsRed.webp",
-        "class": "image-center animate-slide-down image-narrow"
+        "class": "image-center animate-slide-right-down image-narrow"
       }
     ]
   },
@@ -238,7 +251,7 @@
     "images": [
       {
         "src": "sectAnarchsRed.webp",
-        "class": "image-center animate-slide-down image-narrow"
+        "class": "image-center animate-slide-right-down image-narrow"
       }
     ]
   },
@@ -247,7 +260,7 @@
     "images": [
       {
         "src": "sectCamarillaGold.webp",
-        "class": "image-center animate-slide-down image-narrow"
+        "class": "image-center animate-slide-right-down image-narrow"
       }
     ]
   },
@@ -258,7 +271,7 @@
     "images": [
       {
         "src": "clanLasombraGold.webp",
-        "class": "image-center animate-slide-down"
+        "class": "image-center animate-slide-right-down"
       }
     ]
   },
@@ -269,7 +282,7 @@
     "images": [
       {
         "src": "clanLasombraGold.webp",
-        "class": "image-center animate-slide-down"
+        "class": "image-center animate-slide-right-down"
       }
     ]
   },
@@ -350,7 +363,7 @@
     "images": [
       {
         "src": "clanCappadocianWhite.webp",
-        "class": "image-left animate-slide-down"
+        "class": "image-left animate-slide-right-down"
       }
     ]
   },
@@ -359,7 +372,7 @@
     "images": [
       {
         "src": "clanTzimisceIvory.webp",
-        "class": "image-left animate-slide-down"
+        "class": "image-left animate-slide-right-down"
       }
     ]
   },
@@ -372,7 +385,7 @@
     "images": [
       {
         "src": "clanLasombraPurple.webp",
-        "class": "image-left animate-slide-down"
+        "class": "image-left animate-slide-right-down"
       }
     ]
   },
@@ -545,7 +558,7 @@
     "images": [
       {
         "src": "clanThinBloodRed.webp",
-        "class": "image-left animate-slide-down"
+        "class": "image-left animate-slide-right-down"
       }
     ]
   },
@@ -558,7 +571,7 @@
     "images": [
       {
         "src": "clanVentrueGold.webp",
-        "class": "image-left animate-slide-down"
+        "class": "image-left animate-slide-right-down"
       }
     ]
   },
@@ -571,7 +584,7 @@
     "images": [
       {
         "src": "clanSetiteIvory.webp",
-        "class": "image-left animate-slide-down"
+        "class": "image-left animate-slide-right-down"
       }
     ]
   },
@@ -584,7 +597,7 @@
     "images": [
       {
         "src": "clanGangrelIvory.webp",
-        "class": "image-left animate-slide-down"
+        "class": "image-left animate-slide-right-down"
       }
     ]
   },
@@ -597,7 +610,7 @@
     "images": [
       {
         "src": "clanMalkavianIvory.webp",
-        "class": "image-left animate-slide-down image-narrow"
+        "class": "image-left animate-slide-right-down image-narrow"
       }
     ]
   },
@@ -610,7 +623,7 @@
     "images": [
       {
         "src": "clanLasombraAntitribuGold.webp",
-        "class": "image-left animate-slide-down"
+        "class": "image-left animate-slide-right-down"
       }
     ]
   },
@@ -623,19 +636,7 @@
     "images": [
       {
         "src": "clanAssamiteIvory.webp",
-        "class": "image-left animate-slide-down image-wide"
-      }
-    ]
-  },
-  "Ceri": {
-    "surtitle": "The Blood God",
-    "surtitleClass": "blood-god",
-    "titleClass": "blood-god",
-    "content": "Ceri is rumored to be a Fourth Generation Toreador who treats whole cities as performance pieces, sometimes appearing as a tall, ghost-pale woman, other times as a bone-white spider dragging itself through old catacombs. In the Gehenna War, her network of informants, the Cartographers, supposedly sells maps of methuselah movements to whichever side has amused her most that year.",
-    "images": [
-      {
-        "src": "clanToreadorIvory.webp",
-        "class": "image-left animate-slide-down"
+        "class": "image-left animate-slide-right-down image-wide"
       }
     ]
   },
@@ -648,7 +649,7 @@
     "images": [
       {
         "src": "clanVentrueIvory.webp",
-        "class": "image-left animate-slide-down"
+        "class": "image-left animate-slide-right-down"
       }
     ]
   },
@@ -661,7 +662,7 @@
     "images": [
       {
         "src": "clanToreadorGold.webp",
-        "class": "image-left animate-slide-down"
+        "class": "image-left animate-slide-right-down"
       }
     ]
   },
