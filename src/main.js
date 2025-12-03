@@ -1179,14 +1179,14 @@ function displayRumor(rumor) {
   if (rumor.images && Array.isArray(rumor.images)) {
     rumor.images.forEach((imgData) => {
       const img = document.createElement("img");
-      // Prepend base path - if src already starts with /, check if it includes /VTM-Cursor
-      const basePath = "/VTM-Cursor/assets/images/rumor/";
-      if (imgData.src.startsWith("/VTM-Cursor/")) {
+      // Prepend base path - if src already starts with /, check if it includes /toronto-rising
+      const basePath = "/toronto-rising/assets/images/rumor/";
+      if (imgData.src.startsWith("/toronto-rising/")) {
         // Already has the prefix
         img.src = imgData.src;
       } else if (imgData.src.startsWith("/")) {
         // Absolute path without prefix - add it
-        img.src = `/VTM-Cursor${imgData.src}`;
+        img.src = `/toronto-rising${imgData.src}`;
       } else {
         // Relative filename - prepend base path
         img.src = `${basePath}${imgData.src}`;

@@ -30,9 +30,9 @@ npm run preview
 
 Static assets like fonts and images should be placed in the `public/` folder:
 
-- **Fonts**: `public/fonts/` - Reference as `/VTM-Cursor/fonts/your-font.woff2`
-- **Images**: `public/images/` - Reference as `/VTM-Cursor/images/your-image.jpg`
-- **Other static files**: Place directly in `public/` - Reference as `/VTM-Cursor/filename.ext`
+- **Fonts**: `public/fonts/` - Reference as `/toronto-rising/fonts/your-font.woff2`
+- **Images**: `public/images/` - Reference as `/toronto-rising/images/your-image.jpg`
+- **Other static files**: Place directly in `public/` - Reference as `/toronto-rising/filename.ext`
 
 Files in `public/` are copied to the root of `dist/` during build and are served as-is.
 
@@ -43,4 +43,4 @@ import myImage from './assets/image.jpg'
 
 ## GitHub Pages Deployment
 
-The project is configured to deploy to GitHub Pages at `/VTM-Cursor/`. After building, the `dist/` folder can be deployed to the `gh-pages` branch or via GitHub Actions.
+The project is configured to deploy to GitHub Pages at `/toronto-rising/`. After building, the `dist/` folder can be deployed to the `gh-pages` branch or via GitHub Actions.
