@@ -1410,53 +1410,76 @@ let rumorStack = createShuffledStack(rumorsData);
 let currentTimeline = null;
 
 // Track debug mode state
-let debugMode = true; // Default to enabled for easier testing
+// Enabled by default in development, disabled in production builds
+let debugMode = import.meta.env.DEV;
 
 // Start displaying rumors
 const firstRumor = getNextRumor(rumorStack, rumorsData, debugMode);
 displayRumor(firstRumor);
 
-// Pause/Resume button functionality
-const pauseButton = document.getElementById("pause-btn");
-let isPaused = false;
+// Debug buttons - only available in development mode
+// In production builds, these buttons are automatically removed
+if (import.meta.env.DEV) {
+  // Pause/Resume button functionality
+  const pauseButton = document.getElementById("pause-btn");
+  let isPaused = false;
 
-pauseButton.addEventListener("click", () => {
-  if (isPaused) {
-    // Resume animation
-    if (currentTimeline) {
-      currentTimeline.resume();
-    }
-    pauseButton.textContent = "⏸";
-    pauseButton.classList.remove("paused");
-    isPaused = false;
-  } else {
-    // Pause animation
-    if (currentTimeline) {
-      currentTimeline.pause();
-    }
-    pauseButton.textContent = "▶";
-    pauseButton.classList.add("paused");
-    isPaused = true;
+  if (pauseButton) {
+    pauseButton.addEventListener("click", () => {
+      if (isPaused) {
+        // Resume animation
+        if (currentTimeline) {
+          currentTimeline.resume();
+        }
+        pauseButton.textContent = "⏸";
+        pauseButton.classList.remove("paused");
+        isPaused = false;
+      } else {
+        // Pause animation
+        if (currentTimeline) {
+          currentTimeline.pause();
+        }
+        pauseButton.textContent = "▶";
+        pauseButton.classList.add("paused");
+        isPaused = true;
+      }
+    });
   }
-});
 
-// Debug button functionality
-const debugButton = document.getElementById("debug-btn");
+  // Debug button functionality
+  const debugButton = document.getElementById("debug-btn");
 
-// Initialize button state to match default debug mode (enabled)
-debugButton.classList.add("active");
-debugButton.title = "Debug mode ON - showing first rumor";
-
-debugButton.addEventListener("click", () => {
-  debugMode = !debugMode;
-
-  if (debugMode) {
+  if (debugButton) {
+    // Initialize button state to match default debug mode (enabled)
     debugButton.classList.add("active");
-    debugButton.textContent = "🔍";
     debugButton.title = "Debug mode ON - showing first rumor";
-  } else {
-    debugButton.classList.remove("active");
-    debugButton.textContent = "🔍";
-    debugButton.title = "Debug mode OFF - random selection";
+
+    debugButton.addEventListener("click", () => {
+      debugMode = !debugMode;
+
+      if (debugMode) {
+        debugButton.classList.add("active");
+        debugButton.textContent = "🔍";
+        debugButton.title = "Debug mode ON - showing first rumor";
+      } else {
+        debugButton.classList.remove("active");
+        debugButton.textContent = "🔍";
+        debugButton.title = "Debug mode OFF - random selection";
+      }
+    });
   }
-});
+} else {
+  // Production mode: remove debug buttons from DOM and disable debug mode
+  const pauseButton = document.getElementById("pause-btn");
+  const debugButton = document.getElementById("debug-btn");
+
+  if (pauseButton) {
+    pauseButton.remove();
+  }
+  if (debugButton) {
+    debugButton.remove();
+  }
+
+  // Disable debug mode in production
+  debugMode = false;
+}

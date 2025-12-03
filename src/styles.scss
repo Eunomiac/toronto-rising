@@ -271,7 +271,7 @@ body {
         .content-image {
           position: absolute;
           z-index: -2;
-          transform: translate(-50%, -100%);
+          // transform: translate(-50%, -100%);
           width: 30%;
 
           &.image-wide {
