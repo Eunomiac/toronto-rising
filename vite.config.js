@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/VTM-Cursor/",
+  base: "/toronto-rising/",
   build: {
     outDir: "dist",
     assetsDir: "assets",
