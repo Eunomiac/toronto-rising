@@ -7,17 +7,99 @@ const __dirname = path.dirname(__filename);
 
 /**
  * Strips comments from JSONC (JSON with Comments) content
+ * Properly handles comments inside strings (e.g., URLs like http://example.com)
  * @param {string} content - JSONC content with comments
  * @returns {string} - JSON content without comments
  */
 function stripJsoncComments(content) {
-  // Remove single-line comments (// ...)
-  content = content.replace(/\/\/.*$/gm, "");
+  let result = "";
+  let i = 0;
+  let inString = false;
+  let stringChar = null; // '"' or "'"
+  let escaped = false;
 
-  // Remove multi-line comments (/* ... */)
-  content = content.replace(/\/\*[\s\S]*?\*\//g, "");
+  while (i < content.length) {
+    const char = content[i];
+    const nextChar = i + 1 < content.length ? content[i + 1] : null;
 
-  return content;
+    if (escaped) {
+      // We're in an escaped sequence, add the character and reset escaped flag
+      result += char;
+      escaped = false;
+      i++;
+      continue;
+    }
+
+    if (char === "\\") {
+      // Escape character - next character is escaped
+      escaped = true;
+      result += char;
+      i++;
+      continue;
+    }
+
+    if (!inString && (char === '"' || char === "'")) {
+      // Entering a string
+      inString = true;
+      stringChar = char;
+      result += char;
+      i++;
+      continue;
+    }
+
+    if (inString && char === stringChar) {
+      // Exiting a string
+      inString = false;
+      stringChar = null;
+      result += char;
+      i++;
+      continue;
+    }
+
+    if (inString) {
+      // We're inside a string, just add the character
+      result += char;
+      i++;
+      continue;
+    }
+
+    // We're outside a string, check for comments
+    if (char === "/" && nextChar === "/") {
+      // Single-line comment - skip until end of line
+      while (i < content.length && content[i] !== "\n" && content[i] !== "\r") {
+        i++;
+      }
+      // Include the newline character
+      if (i < content.length && (content[i] === "\n" || content[i] === "\r")) {
+        result += content[i];
+        if (content[i] === "\r" && i + 1 < content.length && content[i + 1] === "\n") {
+          i++; // Skip \n in \r\n
+          result += content[i];
+        }
+        i++;
+      }
+      continue;
+    }
+
+    if (char === "/" && nextChar === "*") {
+      // Multi-line comment - skip until */
+      i += 2; // Skip /*
+      while (i < content.length) {
+        if (content[i] === "*" && i + 1 < content.length && content[i + 1] === "/") {
+          i += 2; // Skip */
+          break;
+        }
+        i++;
+      }
+      continue;
+    }
+
+    // Regular character, add it
+    result += char;
+    i++;
+  }
+
+  return result;
 }
 
 /**
@@ -118,15 +200,14 @@ function processRumorEntry(key, value) {
  * Main function to process the JSON file
  */
 function extractHtmlTagsFromJson() {
-  const jsonPath = path.join(__dirname, "data", "vtm-rumors.jsonc");
+  const jsonPath = path.join(__dirname, "data", "vtm-rumors.json");
   const outputPath = path.join(__dirname, "data", "vtm-rumors-extracted.json");
 
-  console.log("Reading JSONC file...");
+  console.log("Reading JSON file...");
   const jsonContent = fs.readFileSync(jsonPath, "utf8");
 
-  console.log("Stripping comments and parsing JSON...");
-  const jsonWithoutComments = stripJsoncComments(jsonContent);
-  const data = JSON.parse(jsonWithoutComments);
+  console.log("Parsing JSON...");
+  const data = JSON.parse(jsonContent);
 
   console.log("Processing entries...");
   const processedData = {};

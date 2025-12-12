@@ -1971,7 +1971,7 @@ function initializeDecadesTabs() {
     if (decadesModal.getAttribute("aria-hidden") === "false") {
       // Modal is open, update active tab
       setTimeout(() => {
-        updateActiveTab(rows, scrollContainer, tabMap);
+        updateActiveTab(rows, scrollContainer, rowToTabMap);
       }, 100);
     }
   });
