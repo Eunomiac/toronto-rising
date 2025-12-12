@@ -6,6 +6,21 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 /**
+ * Strips comments from JSONC (JSON with Comments) content
+ * @param {string} content - JSONC content with comments
+ * @returns {string} - JSON content without comments
+ */
+function stripJsoncComments(content) {
+  // Remove single-line comments (// ...)
+  content = content.replace(/\/\/.*$/gm, "");
+
+  // Remove multi-line comments (/* ... */)
+  content = content.replace(/\/\*[\s\S]*?\*\//g, "");
+
+  return content;
+}
+
+/**
  * Extracts content from a span tag and removes it from the text
  * @param {string} text - Text containing the span tag
  * @param {string} className - Class name to match (e.g., 'date-line' or 'subtitle')
@@ -103,14 +118,15 @@ function processRumorEntry(key, value) {
  * Main function to process the JSON file
  */
 function extractHtmlTagsFromJson() {
-  const jsonPath = path.join(__dirname, "data", "vtm-rumors.json");
+  const jsonPath = path.join(__dirname, "data", "vtm-rumors.jsonc");
   const outputPath = path.join(__dirname, "data", "vtm-rumors-extracted.json");
 
-  console.log("Reading JSON file...");
+  console.log("Reading JSONC file...");
   const jsonContent = fs.readFileSync(jsonPath, "utf8");
 
-  console.log("Parsing JSON...");
-  const data = JSON.parse(jsonContent);
+  console.log("Stripping comments and parsing JSON...");
+  const jsonWithoutComments = stripJsoncComments(jsonContent);
+  const data = JSON.parse(jsonWithoutComments);
 
   console.log("Processing entries...");
   const processedData = {};

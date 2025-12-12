@@ -4,7 +4,7 @@ An elegant dark-themed single-page application that displays random Vampire: The
 
 ## Features
 
-- Random rumor selection from `vtm-rumors.json`
+- Random rumor selection from `vtm-rumors.jsonc` (JSON with Comments)
 - Shuffled stack to avoid repeating entries until all have been shown
 - Smooth GSAP fade-in/fade-out animations
 - Dark theme optimized for readability

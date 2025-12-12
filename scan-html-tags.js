@@ -6,6 +6,21 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 /**
+ * Strips comments from JSONC (JSON with Comments) content
+ * @param {string} content - JSONC content with comments
+ * @returns {string} - JSON content without comments
+ */
+function stripJsoncComments(content) {
+  // Remove single-line comments (// ...)
+  content = content.replace(/\/\/.*$/gm, "");
+
+  // Remove multi-line comments (/* ... */)
+  content = content.replace(/\/\*[\s\S]*?\*\//g, "");
+
+  return content;
+}
+
+/**
  * Extracts all HTML tags (including attributes) from a string
  * @param {string} text - Text to scan for HTML tags
  * @returns {Set<string>} - Set of unique HTML tags found
@@ -60,13 +75,14 @@ function scanObjectForTags(obj, allTags) {
  * Main function to scan the JSON file for HTML tags
  */
 function scanJsonForHtmlTags() {
-  const jsonPath = path.join(__dirname, "data", "vtm-rumors.json");
+  const jsonPath = path.join(__dirname, "data", "vtm-rumors.jsonc");
 
-  console.log("Reading JSON file...");
+  console.log("Reading JSONC file...");
   const jsonContent = fs.readFileSync(jsonPath, "utf8");
 
-  console.log("Parsing JSON...");
-  const data = JSON.parse(jsonContent);
+  console.log("Stripping comments and parsing JSON...");
+  const jsonWithoutComments = stripJsoncComments(jsonContent);
+  const data = JSON.parse(jsonWithoutComments);
 
   console.log("Scanning for HTML tags...");
   const allTags = new Set();

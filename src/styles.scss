@@ -1,5 +1,6 @@
 // Import font definitions
-@import "font-defs";
+@use "_font-defs" as *;
+@use "sass:color";
 
 * {
   margin: 0;
@@ -40,6 +41,20 @@ html {
   z-index: -1;
   pointer-events: none;
   filter: brightness(0.25);
+  transition: filter 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// Apply grayscale and dimmed brightness to background when modal is open
+.modal[aria-hidden="false"] ~ .background-video,
+body:has(.modal[aria-hidden="false"]) .background-video {
+  filter: brightness(0.15) grayscale(100%);
+}
+
+// Apply dimmed brightness to app content when modal is open
+.modal[aria-hidden="false"] ~ #app,
+body:has(.modal[aria-hidden="false"]) #app {
+  filter: brightness(0.6);
+  transition: filter 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -59,6 +74,7 @@ body {
     height: 100vh;
     position: relative;
     overflow: hidden;
+    transition: filter 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     .rumor-container {
       max-width: 800px;
@@ -121,6 +137,29 @@ body {
         &.of-cities {
           margin-left: -300px;
           margin-bottom: -10px;
+        }
+
+        &.clan-rivalries {
+
+          // font-family: AnaEve;
+          // font-weight: normal;
+          // font-family: Aquifer;
+          // font-family: Brandomi;
+          // font-family: 'Caslon Antique';
+          // font-family: Cinzel;
+          // font-family: 'Cinzel Decorative';
+          // font-family: Cock;
+          // font-family: 'Index 29';
+          letter-spacing: 1px;
+          text-transform: lowercase;
+          // font-weight: bold;
+          // font-family: 'Monteiro Lobato';
+          // font-family: Principaute;
+          font-family: Quadrata;
+          color: #ff4343;
+          // font-family: SchaftstiefelKaputt;
+          // font-family: 'VTKS Expert';
+          // font-family: 'Worn Manuscript';
         }
       }
 
@@ -392,5 +431,494 @@ body {
     font-size: 1.2rem;
     bottom: 1.5rem;
     right: 5rem;
+  }
+}
+
+// Top navigation bar - invisible until hover
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  // Always allow pointer events so hover can work even when invisible
+  pointer-events: auto;
+
+  // Show on hover
+  &:hover {
+    opacity: 1;
+  }
+
+  // Background with subtle blur and transparency
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 10, 10, 0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(196, 30, 58, 0.2);
+    transition: background 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover::before {
+    background: rgba(10, 10, 10, 0.5);
+    border-bottom-color: rgba(196, 30, 58, 0.4);
+  }
+
+  .nav-menu {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 2rem;
+    // Ensure buttons are clickable when nav is visible
+    pointer-events: auto;
+  }
+
+  .nav-button {
+    position: relative;
+    background: transparent;
+    border: 1px solid rgba(196, 30, 58, 0.3);
+    color: #e0e0e0;
+    padding: 0.5rem 1.5rem;
+    font-family: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-shadow: var(--text-shadow-base);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    overflow: hidden;
+
+    // Subtle glow effect on hover
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg,
+          transparent,
+          rgba(196, 30, 58, 0.2),
+          transparent);
+      transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover {
+      border-color: rgba(196, 30, 58, 0.6);
+      background: rgba(196, 30, 58, 0.15);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(196, 30, 58, 0.3);
+
+      &::before {
+        left: 100%;
+      }
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 6px rgba(196, 30, 58, 0.2);
+    }
+
+    // Focus state for accessibility
+    &:focus {
+      outline: 2px solid rgba(196, 30, 58, 0.6);
+      outline-offset: 2px;
+    }
+  }
+}
+
+// Modal styles
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+
+  // Show modal when active
+  &[aria-hidden="false"] {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .modal-content {
+    width: 25vw;
+    min-width: 300px;
+    max-width: 500px;
+    max-height: 80vh;
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(196, 30, 58, 0.4);
+    border-radius: 0px;
+    padding: 1rem 0rem;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6),
+      0 0 0 1px rgba(196, 30, 58, 0.2) inset;
+    transform: translateX(-20px);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &[aria-hidden="false"] .modal-content {
+    transform: translateX(0);
+  }
+
+  .modal-close {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(196, 30, 58, 0.4);
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-shadow: var(--text-shadow-base);
+
+    &:hover {
+      background: rgba(196, 30, 58, 0.3);
+      border-color: rgba(196, 30, 58, 0.6);
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    &:focus {
+      outline: 2px solid rgba(196, 30, 58, 0.6);
+      outline-offset: 2px;
+    }
+  }
+
+  .modal-title {
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 2rem;
+    color: #ff0000;
+    margin-bottom: 0.5rem;
+    text-shadow: var(--text-shadow-base);
+  }
+
+  .modal-body {
+    color: #e0e0e0;
+    font-family: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-shadow: var(--text-shadow-base);
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &#decades-modal {
+    left: 20vw;
+
+    .modal-content {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      padding: 0;
+
+      .decades-tabs {
+        position: absolute;
+        left: -5rem;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.15rem;
+        overflow: hidden;
+        // padding: 1rem 0;
+        z-index: 1;
+        width: 5rem;
+        // background: rgba(0, 255, 0, 0.5);
+        align-items: flex-end;
+
+        .decade-tab {
+          // writing-mode: vertical-rl;
+          // text-orientation: mixed;
+          background: rgba(10, 10, 10, 0.6);
+          backdrop-filter: blur(4px);
+          -webkit-backdrop-filter: blur(4px);
+          border: 1px solid rgba(196, 30, 58, 0.3);
+          color: #e0e0e0;
+          padding: 0.25rem 1.5rem 0.25rem 0.5rem;
+          cursor: pointer;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          font-family: "Percolator Expert", sans-serif;
+          font-size: 18px;
+          text-shadow: var(--text-shadow-base);
+          border-radius: 4px 0 0 4px;
+          // min-height: 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          overflow: hidden;
+          width: 5rem;
+          margin-right: -1rem;
+          // transform: rotate(-90deg);
+
+          --color-1700s: #{color.adjust(#FF0000, $lightness: -10%)};
+          --color-1800s: #{color.adjust(#FF0000, $lightness: 0%)};
+          --color-1900s: #{color.adjust(#FF0000, $lightness: +10%)};
+          --color-2000s: #{color.adjust(#FF0000, $lightness: +20%)};
+
+          &[data-row-name="1760s"],
+          &[data-row-name="1770s"],
+          &[data-row-name="1780s"],
+          &[data-row-name="1790s"] {
+            color: var(--color-1700s);
+          }
+
+          &[data-row-name="1800s"],
+          &[data-row-name="1810s"],
+          &[data-row-name="1820s"],
+          &[data-row-name="1830s"],
+          &[data-row-name="1840s"],
+          &[data-row-name="1850s"],
+          &[data-row-name="1860s"],
+          &[data-row-name="1870s"],
+          &[data-row-name="1880s"],
+          &[data-row-name="1890s"] {
+            color: var(--color-1800s);
+          }
+
+          &[data-row-name="1900s"],
+          &[data-row-name="1910s"],
+          &[data-row-name="1920s"],
+          &[data-row-name="1930s"],
+          &[data-row-name="1940s"],
+          &[data-row-name="1950s"],
+          &[data-row-name="1960s"],
+          &[data-row-name="1970s"],
+          &[data-row-name="1980s"],
+          &[data-row-name="1990s"] {
+            color: var(--color-1900s);
+          }
+
+          &[data-row-name="2000s"],
+          &[data-row-name="2010s"] {
+            color: var(--color-2000s);
+          }
+
+
+          &[data-row-name="1800s"],
+          &[data-row-name="1900s"],
+          &[data-row-name="2000s"] {
+            font-weight: bold;
+            font-size: 20px;
+          }
+
+          // Subtle glow effect on hover
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg,
+                transparent,
+                rgba(196, 30, 58, 0.2),
+                transparent);
+            transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+          }
+
+          &:hover {
+            border-color: rgba(196, 30, 58, 0.6);
+            background: rgba(196, 30, 58, 0.2);
+            transform: translateX(-4px);
+            box-shadow: 0 2px 8px rgba(196, 30, 58, 0.4);
+
+            &::before {
+              left: 100%;
+            }
+          }
+
+          &:active {
+            transform: translateX(-2px);
+          }
+
+          // Active/highlighted state
+          &.active {
+            background: rgba(196, 30, 58, 0.4);
+            border-color: rgba(196, 30, 58, 0.8);
+            border: none;
+            color: #ffffff;
+            box-shadow: 0 0 12px rgba(196, 30, 58, 0.6),
+                        inset 0 0 8px rgba(196, 30, 58, 0.2);
+            transform: translateX(-6px);
+
+            &:hover {
+              background: rgba(196, 30, 58, 0.5);
+              transform: translateX(8px);
+            }
+          }
+
+          // Focus state for accessibility
+          &:focus {
+            outline: 2px solid rgba(196, 30, 58, 0.6);
+            outline-offset: 2px;
+          }
+        }
+      }
+
+      .modal-body {
+        flex: 1;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+        padding: 1rem 0;
+
+
+        .decades-table-scrollable-container {
+          height: 100%;
+          max-height: 100%;
+          overflow-y: auto;
+          overflow-x: hidden;
+          overflow-y: auto;
+          overflow-x: hidden;
+          // padding: 2rem 0;
+
+          // Smooth scrollbar styling
+          &::-webkit-scrollbar {
+            width: 4px;
+          }
+
+          &::-webkit-scrollbar-track {
+            background: rgba(10, 10, 10, 0.3);
+            border-radius: 2px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: rgba(196, 30, 58, 0.4);
+            border-radius: 2px;
+
+            &:hover {
+              background: rgba(196, 30, 58, 0.6);
+            }
+          }
+
+          .decades-table {
+            width: 100%;
+            border-collapse: collapse;
+            border: none;
+            border-radius: 0px;
+            padding: 0;
+            margin: 0;
+
+            td {
+              padding: 0.5rem;
+              font-size: 16px;
+              vertical-align: top;
+
+              &:first-child {
+                font-family: "Percolator Expert", sans-serif;
+                font-size: 24px;
+                font-weight: bold;
+                color: #ff3300;
+                line-height: 1;
+                text-shadow: var(--text-shadow-base);
+                margin-right: 15px;
+                padding-right: 15px;
+              }
+
+              span {
+                display: block;
+                text-indent: -15px;
+                border-bottom: 1px solid rgba(196, 30, 58, 0.3);
+
+                strong {
+                  color: #FFFFFF;
+                  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 1));
+
+                  &:not(.red-text) {
+                    text-shadow: none;
+                  }
+
+
+                  &.red-text {
+                    color: #ff3300;
+                    text-shadow: none;
+                    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 1)) drop-shadow(0 0 0px rgba(255, 0, 0, 1));
+                  }
+                }
+
+                strong.citation {
+                  font-weight: normal;
+                  filter: none;
+                  white-space: nowrap;
+                  color: #888888;
+                  font-style: normal;
+                }
+
+                &::before {
+                  content: "◆ ";
+                  margin-left: -10px;
+                  margin-right: 5px;
+                  // position: absolute;
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: 100%;
+                  background: rgba(0, 0, 0, 0.5);
+                  z-index: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .modal-content {
+      width: 90vw;
+      min-width: auto;
+      max-width: none;
+      padding: 1.5rem;
+    }
   }
 }

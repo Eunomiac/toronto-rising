@@ -1,12 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VTM Rumors</title>
 </head>
+
 <body>
   <img id="background-image" class="background-video" src="/assets/video/red-particle-loop.webp" alt="Background">
+  <nav id="top-nav" class="top-nav" aria-label="Main navigation">
+    <div class="nav-menu">
+      <button id="decades-btn" class="nav-button" aria-label="Open Decades menu">Decades</button>
+    </div>
+  </nav>
+  <div id="decades-modal" class="modal" role="dialog" aria-labelledby="decades-modal-title" aria-hidden="true">
+    <div class="modal-content">
+      <button id="decades-modal-close" class="modal-close" aria-label="Close Decades modal">×</button>
+      <div id="decades-tabs" class="decades-tabs" role="tablist" aria-label="Decade navigation"></div>
+      <div class="modal-body">
+        <div class="decades-table-scrollable-container">
+          <table class="decades-table">
+            <tr name="1760s">
+              <td>1760s</td>
+              <td>
+                <span>Catherine the Great at war with the Ottoman Empire</span>
+                <span><strong>The Seven Years' War</strong></span>
+                <span>Spanish missionaries come to California.</span>
+                <span>Gorkhas conquer Nepal.</span>
+                <span>Pontiac's Rebellion</span>
+                <span><strong>The French surrender New France, and the city of Quebec,</strong> to Britain.</span>
+                <span>The <strong>Industrial Revolution</strong> is in its early stages.</span>
+                <span>Alchemy is falling out of favor among chemists.</span>
+                <span>A local farmer of Gévaudan slays a man-eating animal known as <strong>the Beast of
+                    Gévaudan</strong>, <strong class="red-text">probably a lupine</strong>.</span>
+              </td>
+            </tr>
+            <tr name="1770s">
+              <td>1770s</td>
+              <td>
+                <span><strong>The American Revolutionary War</strong> begins.</span>
+                <span><strong class="red-text">Kindred rebels in New England fight for independence from European
+                  Camarilla control</strong> <strong class="citation">(IN MEMORIAM p.35–39)</strong>.</span>
+                  <span>Cook reaches Australia.</span>
+                  <span>Xhosa Wars in South Africa</span>
+                  <span><strong>The Illuminati</strong> founded in Bavaria</span>
+                  <span>War of Bavarian Succession</span>
+                  <span>Publication of Adam Smith’s The Wealth of Nations</span>
+              </td>
+            </tr>
+            <tr name="1780s">
+              <td>1780s</td>
+              <td>
+                <span><strong>The French Revolution</strong> begins; <strong class="red-text">in Paris, a new Bohemian faction of Camarilla Kindred challenge the traditionalist old-guard rule</strong> <strong class="citation">(IN MEMORIAM p.39–42)</strong>.</span>
+                <span>First Anglo-Maratha War</span>
+                <span>The Northwest Indian War begins.</span>
+                <span>Liberal reforms in the Holy Roman Empire; abolition of serfdom</span>
+                <span>Spanish settlers found Los Angeles on the village of Yaanga.</span>
+                <span><strong>Australia colonized by the British</strong></span>
+              </td>
+            </tr>
+            <tr name="1790s">
+              <td>1790s</td>
+              <td>
+                <span><strong>The Reign of Terror</strong> in France</span>
+                <span>Slavery abolished in all French territories</span>
+                <span>Assassination of Gustav III of Sweden</span>
+                <span>Haitian Revolution</span>
+                <span><strong>Expansion of European Colonialism</strong></span>
+                <span>British anti-colonist soldiers from Sierra Leone found “Freetown.”</span>
+                <span><strong>The Irish Rebellion of 1798</strong></span>
+                <span>The Second Great Awakening</span>
+              </td>
+            </tr>
+            <tr name="1800s">
+              <td>1800s</td>
+              <td>
+                <span>Second Anglo-Maratha War</span>
+                <span><strong>Napoleonic Wars</strong></span>
+                <span>Slave trade banned in the U.K., the U.S., and Denmark-Norway</span>
+                <span><strong>Napoleon reintroduces slavery</strong> in French colonies.</span>
+                <span>Serfdom abolished in Prussia and Warsaw</span>
+                <span>Haiti gains independence.</span>
+                <span><strong>The Holy Roman Empire is dissolved.</strong></span>
+                <span>Zheng Yi Sao commands <strong>a fleet of 40,000–60,000 pirates</strong> in the South China Sea.</span>
+              </td>
+            </tr>
+            <tr name="1810s">
+              <td>1810s</td>
+              <td>
+                <span><strong>The Napoleonic Empire collapses</strong> after attempt to invade Russia.</span>
+                <span>Sweden claims Norway from Denmark.</span>
+                <span>Spanish American Wars of Independence</span>
+                <span><strong>The War of 1812</strong></span>
+                <span>Automation of textile industry triggers Luddite uprisings, destroying machines in northern England and the Midlands.</span>
+                <span>The Regency era begins: Prince George becomes regent of Great Britain.</span>
+                <span><strong>Gaslight becomes common</strong> in cities, <strong class="red-text">complicating street hunting</strong>.</span>
+                <span>Mount Tambora erupts, leading to <strong>"The Year Without a Summer;"</strong> the sulfide gas reflects sunlight over the northern hemisphere, <strong class="red-text">making it possible for many Kindred to operate briefly during daylight<strong>.</span>
+              </td>
+            </tr>
+            <tr name="1820s">
+              <td>1820s</td>
+              <td>
+                <span><strong class="red-text">Disastrous Blood Wedding in London between Anne Bowesley and Louise Maria de Rambaud</strong> <strong class="citation">(IN MEMORIAM p.90–93)</strong></span>
+                  <span>The first photograph is taken.</span>
+                  <span><strong>The first railroad</strong> is built.</span>
+                  <span>The town of Ashcroft is founded around a coal mining operation.</span>
+                  <span><strong>The Greek War of Independence</strong></span>
+                  <span><strong>The Missouri Compromise</strong></span>
+                  <span>The Russo-Turkish War of 1828–29</span>
+                  <span>The Java War</span>
+              </td>
+            </tr>
+            <tr name="1830s">
+              <td>1830s</td>
+              <td>
+                <span>The Black Hawk War and the Battle of Fort Dearborn</span>
+                <span>Ada Byron becomes the first known coder in the world.</span>
+                <span><strong class="red-text">The Spanish Inquisition officially ends</strong>, 1834.</span>
+                <span><strong class="red-text">The Montmartre Massacre, in which Prince Villon of Paris destroys illegal childer in his domain</strong> <strong class="citation">(IN MEMORIAM pp.93–96)</strong></span>
+                <span><strong>Victoria becomes Queen of England</strong>, 1837.</span>
+                <span><strong>The First Opium War</strong></span>
+                <span>Abolition of Slavery in the British Empire</span>
+                <span>The Trail of Tears</span>
+                <span><strong>First regular steamship service across the Atlantic</strong></span>
+              </td>
+            </tr>
+            <tr name="1840s">
+              <td>1840s</td>
+              <td>
+                <span><strong>The Irish Famine</strong></span>
+                <span>The European revolutions of 1848</span>
+                <span>The Treaty of Waitangi becomes New Zealand's founding document.</span>
+                <span><strong>China cedes Hong Kong to the British</strong> to end the First Opium War.</span>
+                <span>The First Anglo-Sikh War</span>
+                <span><strong>The Mexican-American War</strong></span>
+                <span>Marx and Engels' Communist Manifesto (1848)</span>
+                <span><strong>The California Gold Rush</strong> begins.</span>
+                <span>The Women's suffrage movement holds its first convention, 1848.</span>
+              </td>
+            </tr>
+            <tr name="1850s">
+              <td>1850s</td>
+              <td>
+                <span><strong>The Crimean War</strong></span>
+                <span>The Second Opium War</span>
+                <span><strong>Mass migration to the American frontier</strong></span>
+                <span>Mormon missionaries settle what will become Las Vegas.</span>
+                <span>The Second War of Italian Independence</span>
+                <span><strong>The First Indian War of Independence</strong></span>
+                <span>Construction of Central Park in New York begins.</span>
+                <span>The Colorado Gold Rush begins.</span>
+                <span>Charles Darwin's On the Origin of Species (1859)</span>
+              </td>
+            </tr>
+            <tr name="1860s">
+              <td>1860s</td>
+              <td>
+                <span><strong>Abraham Lincoln</strong> is elected, 1860.</span>
+                <span><strong>The American Civil War</strong></span>
+                <span><strong class="red-text">The Great Unification, in which domains around Berlin are forcibly consolidated under one Prince</strong> <strong class="citation">(IN MEMORIAM pp.101–104)</strong></span>
+                <span>Little Crow's War</span>
+                <span>World's first subway system, the London Underground, opens.</span>
+                <span>The New York Draft Riots</span>
+                <span>The Japanese Imperial Army fight the last shogunate samurai in a battle of guns against swords, 1864.</span>
+                <span>Haussmann's renovation of Paris</span>
+                <span>Gregor Mendel and Francis Galton discover genetics.</span>
+                <span><strong>Canada becomes a British dominion.</strong></span>
+              </td>
+            </tr>
+            <tr name="1870s">
+              <td>1870s</td>
+              <td>
+                <span><strong>The Second Industrial Revolution</strong></span>
+                <span><strong>The Unification of Germany</strong></span>
+                <span><strong>Franco-Prussian War</strong></span>
+                <span>Battle of Little Bighorn</span>
+                <span>Post-Civil War Reconstruction in the U.S.</span>
+                <span>The Satsuma Rebellion</span>
+                <span><strong>The Hermetic order of the Golden Dawn</strong> is founded.</span>
+                <span>Bulgaria and Romania declare independence from the Ottoman Empire.</span>
+                <span>Le Fanu's Carmilla (1871–72)</span>
+              </td>
+            </tr>
+            <tr name="1880s">
+              <td>1880s</td>
+              <td>
+                <span>First Boer War</span>
+                <span><strong>Jack the Ripper</strong> terrorizes London.</span>
+                <span>British occupation of Cairo</span>
+                <span>Serbo-Bulgarian War</span>
+                <span>France colonizes Indochina.</span>
+                <span>Increased <strong>European colonization in Africa</strong></span>
+                <span><strong>The Golden Jubilee of Queen Victoria's 50-year reign</strong>, 1887</span>
+                <span>Assassination of Czar Alexander II of Russia</span>
+                <span><strong>The automobile</strong> is invented.</span>
+                <span><strong class="red-text">Vlad Dracula takes domain in England and breaks the Masquerade by telling his story to Bram Stoker</strong> <strong class="citation">(IN MEMORIAM pp.96–100)</strong>.</span>
+              </td>
+            </tr>
+            <tr name="1890s">
+              <td>1890s</td>
+              <td>
+                <span><strong>Spanish-American War</strong></span>
+                <span>Second Boer War</span>
+                <span>The opening of the <strong>Trans-Siberian Railway in Russia</strong></span>
+                <span>The Hawaiian Kingdom overthrown by U.S. insurgents</span>
+                <span>The First Sino-Japanese War</span>
+                <span>Economic depression in the U.S.</span>
+                <span><strong>The Boxer Rebellion</strong></span>
+                <span>Bram Stoker's Dracula (1897)</span>
+              </td>
+            </tr>
+            <tr name="1900s">
+              <td>1900s</td>
+              <td>
+                <span>King Edward VII reigns over the British Empire.</span>
+                <span>First radio broadcast</span>
+                <span><strong>The 1906 San Francisco earthquake</strong></span>
+                <span><strong>Paris bounces back as the cultural capital of Europe</strong>.</span>
+                <span>Japan established as a world power following the Russo-Japanese War</span>
+                <span><strong>Ottoman invasion of Persia</strong></span>
+                <span><strong class="red-text">The Trial of Mirrors: the blood god Kemintiri humiliates the Camarilla</strong> <strong class="citation">(IN MEMORIAM pp.104–107).</strong></span>
+                <span>Norway declares independence from Sweden.</span>
+              </td>
+            </tr>
+            <tr name="1910s">
+              <td>1910s</td>
+              <td>
+                <span>R.M.S. Titanic sinks, 1912</span>
+                <span>First Balkan Wars</span>
+                <span><strong>World War I</strong></span>
+                <span>Latvian War of Independence</span>
+                <span><strong>Execution of Czar Nicholas II</strong>, his family, and servants</span>
+                <span><strong>The Great Influenza epidemic</strong> of 1918–20</span>
+                <span>The Russian Revolution</span>
+                <span>The Mexican Revolution</span>
+                <span>Dissolution of the German colonial empire, the Ottoman Empire, Austro-Hungary, and the Russian Empire</span>
+              </td>
+            </tr>
+            <tr name="1920s">
+              <td>1920s</td>
+              <td>
+                <span><strong>Prohibition</strong></span>
+                <span>The discovery of the tomb of Tutankhamen</span>
+                <span>Turkish War of Independence</span>
+                <span>Polish-Soviet War</span>
+                <span><strong>Irish War of Independence</strong></span>
+                <span>Russian Civil War</span>
+                <span>Rise of radical political movements</span>
+                <span><strong class="red-text">The Soviet Brujah Council formally abandons the ideal of open coexistence with mortals, 1926</strong> <strong class="citation">(ANARCH p.27)</strong>.</span>
+                <span>Egypt gains independence.</span>
+                <span><strong>The Wall Street Crash</strong>, 1929</span>
+              </td>
+            </tr>
+            <tr name="1930s">
+              <td>1930s</td>
+              <td>
+                <span><strong>The Great Depression</strong></span>
+                <span>The Second Sino-Japanese War begins.</span>
+                <span><strong class="red-text">The Hunt for the Hidden begins in Prague</strong> <strong class="citation">(IN MEMORIAM pp.107–110)</strong>.</span>
+                <span>Spanish Civil War</span>
+                <span>Rise of Nazism in Germany</span>
+                <span><strong>Soviet famine</strong></span>
+                <span>The Hindenburg Disaster</span>
+                <span><strong>World War II</strong> begins, 1939.</span>
+                <span>Dracula screens (1931)</span>
+              </td>
+            </tr>
+            <tr name="1940s">
+              <td>1940s</td>
+              <td>
+                <span><strong>The Holocaust</strong></span>
+                <span><strong>Atomic bombings</strong> of Hiroshima and Nagasaki</span>
+                <span>Japanese-American Incarceration</span>
+                <span><strong class="red-text">The Second Anarch Revolt begins in Los Angeles; the Anarch Free States are founded.</strong></span>
+                <span><strong class="red-text">The Moonlit Crusade begins as Camarilla Princes seek to divert attention away from Anarch causes</strong> <strong class="citation">(IN MEMORIAM pp.114–117)</strong>.</span>
+                <span>Founding of the U.N. and NATO</span>
+                <span><strong>The Cold War begins.</strong></span>
+                <span>The Havana Conference mob summit on Cuba</span>
+                <span>Founding of the Hells Angels, 1946</span>
+                <span>Indonesian War of Independence</span>
+                <span>First Indochina War</span>
+                <span>Radiocarbon dating developed</span>
+                <span><strong>The People's Republic of China proclaimed</strong></span>
+              </td>
+            </tr>
+            <tr name="1950s">
+              <td>1950s</td>
+              <td>
+                <span>Racial segregation is ended in the U.S.</span>
+                <span>The <strong>Space Race</strong> begins.</span>
+                <span><strong>The Korean War</strong></span>
+                <span><strong>The Vietnam War</strong> begins</span>
+                <span><strong>The Civil Rights Movement</strong></span>
+                <span>The first passenger jet flight route opens.</span>
+                <span>Egyptian Revolution</span>
+                <span>Color television</span>
+                <span><strong class="red-text">The CIA fake vampire attacks in the Philippines to destabilize the Hukbalahap Rebellion.</strong></span>
+              </td>
+            </tr>
+            <tr name="1960s">
+              <td>1960s</td>
+              <td>
+                <span>The <strong>Cuban Missile Crisis</strong></span>
+                <span>Stonewall riots</span>
+                <span><strong>The Moon landing</strong></span>
+                <span>Construction of the first laser</span>
+                <span>The Second Vatican Council</span>
+                <span>Coup d'état in Brazil</span>
+                <span><strong>Assassinations</strong> of <strong>Malcolm X</strong>, <strong>Martin Luther King Jr</strong>, and <strong>Kennedy</strong></span>
+                <span><strong class="red-text">The Hunt of Spring, 1968: Anarchs hunt Old Clan Tzimisce and Nosferatu in Prague</strong> <strong class="citation">(IN MEMORIAM p.108)</strong>.</span>
+                <span>The Six-Day War</span>
+                <span><strong>The Summer of Love</strong></span>
+              </td>
+            </tr>
+            <tr name="1970s">
+              <td>1970s</td>
+              <td>
+                <span>The <strong>Cuban Missile Crisis</strong></span>
+                <span>Stonewall riots</span>
+                <span><strong>The Moon landing</strong></span>
+                <span>Construction of the first laser</span>
+                <span>The Second Vatican Council</span>
+                <span>Coup d'état in Brazil</span>
+                <span><strong>Assassinations</strong> of <strong>Malcolm X</strong>, <strong>Martin Luther King Jr</strong>, and <strong>Kennedy</strong></span>
+                <span><strong class="red-text">The Hunt of Spring, 1968: Anarchs hunt Old Clan Tzimisce and Nosferatu in Prague</strong> <strong class="citation">(IN MEMORIAM p.108)</strong>.</span>
+                <span>The Six-Day War</span>
+                <span><strong>The Summer of Love</strong></span>
+              </td>
+            </tr>
+            <tr name="1980s">
+              <td>1980s</td>
+              <td>
+                <span><strong>Chernobyl</strong> disaster</span>
+                <span>Beirut barracks bombing</span>
+                <span><strong>The Internet</strong> is created.</span>
+                <span><strong>Satanic Panic</strong></span>
+                <span>The <strong>HIV epidemic</strong></span>
+                <span>The <strong>crack epidemic</strong> in the U.S.</span>
+                <span><strong class="red-text">Large-scale thin-blood purges</strong> <strong class="citation">(IN MEMORIAM p.117)</strong></span>
+                <span><strong class="red-text">The War of Chicago breaks out, as lupines and Sabbat attack the city</strong> <strong class="citation">(CHICAGO BY NIGHT p.103, 119)</strong>.</span>
+                <span>Space shuttle Challenger explodes on lift-off.</span>
+                <span>U.S. invasion of Grenada</span>
+                <span>Revolutions of 1989; <strong>Fall of the Berlin Wall</strong></span>
+              </td>
+            </tr>
+            <tr name="1990s">
+              <td>1990s</td>
+              <td>
+                <span><strong>Collapse of the Soviet Union</strong></span>
+                <span>The Congo Wars</span>
+                <span>Heaven's Gate collective suicide</span>
+                <span><strong>The Gulf War</strong></span>
+                <span>Rodney King trial</span>
+                <span>Nelson Mandela elected President of South Africa</span>
+                <span><strong class="red-text">The Week of Nightmares; the ancient predecessor of the Ravnos is said to wake; many members of the clan are lost</strong> <strong class="citation">(IN MEMORIAM p.117)</strong>.</span>
+                <span>Waco Siege</span>
+                <span>The first sheep, Dolly, is cloned.</span>
+                <span><strong>The Los Angeles riots</strong></span>
+                <span><strong>Oklahoma City Bombing</strong></span>
+                <span>Tokyo subway sarin attack</span>
+                <span>Viagra is created.</span>
+                <span>The EU is established.</span>
+                <span><strong>The Y2K scare</strong></span>
+              </td>
+            </tr>
+            <tr name="2000s">
+              <td>2000s</td>
+              <td>
+                <span><strong>September 11th</strong> attacks</span>
+                <span><strong>Homeland Security</strong> gains access to all U.S. citizens' private data.</span>
+                <span>The US initiates <strong>the War on Terror</strong>.</span>
+                <span><strong>Hurricane Katrina</strong> devastates New Orleans.</span>
+                <span><strong>The Great Recession of 2008</strong></span>
+                <span>Reality TV surges in popularity.</span>
+                <span>The Humane Genome Project is declared complete.</span>
+                <span>Facebook launches.</span>
+                <span>The first iPhone</span>
+                <span><strong class="red-text">Government agencies commence coordinated attacks on "blankbody threats," marking the beginning of what becomes known as the Second Inquisition</strong></span>
+                <span>Obama is elected.</span>
+                <span><strong class="red-text">Vienna Chantry destroyed; the Tremere Pyramid decapitated.</strong></span>
+              </td>
+            </tr>
+            <tr name="2010s">
+              <td>2010s</td>
+              <td>
+                <span><strong>Occupy Wall Street</strong></span>
+                <span>The First and Second Arab Spring</span>
+                <span><strong class="red-text">The Beckoning begins, marking the start of the so-called Gehenna War.</strong></span>
+                <span><strong class="red-text">Berlin falls to a bloody Anarch revolution</strong> <strong class="citation">(ANARCH p.37, CAMARILLA p.111–112)</strong>.</span>
+                <span>The U.S. conducts more than 500 unmanned drone strikes throughout the Middle East.</span>
+                <span><strong class="red-text">Convention of Prague. The majority of Brujah leave the Camarilla.</strong></span>
+                <span><strong class="red-text">The Vermillion Wedding. The Ashirra formally allies with the Camarilla.</strong></span>
+                <span><strong class="red-text">The fall of London as Second Inquisition agencies annihilate the local Camarilla hierarchy.</strong></span>
+                <span>Marijuana legalized across Canada</span>
+                <span><strong>Black Lives Matter</strong></span>
+                <span>European migrant crisis</span>
+                <span>Global awareness of man-made climate change</span>
+                <span>Advancement of LGBTQ rights in the West</span>
+                <span><strong>MeToo movement</strong> begins</span>
+                <span><strong>Brexit</strong></span>
+                <span>Greek economy collapses</span>
+                <span><strong>Russo-Ukrainian War</strong> begins</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
   <div id="app">
     <div id="rumor-container" class="rumor-container">
       <h1 id="rumor-title" class="rumor-title"></h1>
@@ -17,4 +419,5 @@
   </div>
   <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>

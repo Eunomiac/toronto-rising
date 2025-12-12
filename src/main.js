@@ -1,5 +1,5 @@
 import { gsap } from "gsap";
-import rumorsData from "../data/vtm-rumors.json";
+import rumorsData from "../data/vtm-rumors.jsonc";
 import "./styles.scss";
 
 // Ensure background video plays
@@ -1768,11 +1768,69 @@ if (import.meta.env.DEV) {
   debugMode = false;
 }
 
+// Modal functionality
+/**
+ * Handles opening and closing the Decades modal
+ */
+const decadesModal = document.getElementById("decades-modal");
+const decadesButton = document.getElementById("decades-btn");
+const decadesModalClose = document.getElementById("decades-modal-close");
+
+/**
+ * Opens the Decades modal
+ */
+function openDecadesModal() {
+  if (decadesModal) {
+    decadesModal.setAttribute("aria-hidden", "false");
+    // Prevent body scroll when modal is open
+    document.body.style.overflow = "hidden";
+  }
+}
+
+/**
+ * Closes the Decades modal
+ */
+function closeDecadesModal() {
+  if (decadesModal) {
+    decadesModal.setAttribute("aria-hidden", "true");
+    // Restore body scroll
+    document.body.style.overflow = "";
+  }
+}
+
+// Open modal when Decades button is clicked
+if (decadesButton) {
+  decadesButton.addEventListener("click", (event) => {
+    event.stopPropagation(); // Prevent event from bubbling to document click handler
+    openDecadesModal();
+  });
+}
+
+// Close modal when X button is clicked
+if (decadesModalClose) {
+  decadesModalClose.addEventListener("click", (event) => {
+    event.stopPropagation(); // Prevent event from bubbling to document click handler
+    closeDecadesModal();
+  });
+}
+
 // Click anywhere to skip to next rumor
 // Kills current timeline and performs a quick fade-out before showing next rumor
 document.addEventListener("click", (event) => {
   // Don't trigger if clicking on debug buttons (they have their own handlers)
   if (event.target.id === "pause-btn" || event.target.id === "debug-btn") {
+    return;
+  }
+
+  // Don't trigger if clicking on navigation bar, modal, or their children
+  const target = event.target;
+  const topNav = document.getElementById("top-nav");
+  const modal = document.getElementById("decades-modal");
+
+  if (
+    topNav && (topNav.contains(target) || topNav === target) ||
+    modal && (modal.contains(target) || modal === target)
+  ) {
     return;
   }
 
@@ -1848,3 +1906,259 @@ document.addEventListener("click", (event) => {
     }
   });
 });
+
+/**
+ * Initializes the Decades modal tabs functionality
+ * Creates tabs from table rows with name attributes and handles scrolling/highlighting
+ */
+function initializeDecadesTabs() {
+  const decadesModal = document.getElementById("decades-modal");
+  const decadesTabs = document.getElementById("decades-tabs");
+  const decadesTable = document.querySelector(".decades-table");
+  const scrollContainer = document.querySelector(".decades-table-scrollable-container");
+
+  if (!decadesModal || !decadesTabs || !decadesTable || !scrollContainer) {
+    return;
+  }
+
+  // Get all table rows with name attributes
+  const rows = Array.from(decadesTable.querySelectorAll("tr[name]"));
+  const tabMap = new Map(); // Map of tab button to row element
+  const rowToTabMap = new Map(); // Map of row element to tab button
+
+  // Clear existing tabs
+  decadesTabs.innerHTML = "";
+
+  // Create a tab for each row
+  rows.forEach((row) => {
+    const name = row.getAttribute("name");
+    if (!name) return;
+
+    // Create tab button
+    const tabButton = document.createElement("button");
+    tabButton.className = "decade-tab";
+    tabButton.textContent = name;
+    tabButton.setAttribute("role", "tab");
+    tabButton.setAttribute("aria-label", `Scroll to ${name}`);
+    tabButton.setAttribute("data-row-name", name);
+
+    // Store mappings
+    tabMap.set(tabButton, row);
+    rowToTabMap.set(row, tabButton);
+
+    // Add click handler to scroll to row
+    tabButton.addEventListener("click", () => {
+      scrollToRow(row, rows, scrollContainer, rowToTabMap);
+    });
+
+    decadesTabs.appendChild(tabButton);
+  });
+
+  // Handle scroll events to highlight active tab
+  let scrollTimeout = null;
+  scrollContainer.addEventListener("scroll", () => {
+    // Debounce scroll events for performance
+    if (scrollTimeout) {
+      clearTimeout(scrollTimeout);
+    }
+    scrollTimeout = setTimeout(() => {
+      updateActiveTab(rows, scrollContainer, rowToTabMap);
+    }, 50);
+  });
+
+  // Initial highlight on modal open
+  const observer = new MutationObserver(() => {
+    if (decadesModal.getAttribute("aria-hidden") === "false") {
+      // Modal is open, update active tab
+      setTimeout(() => {
+        updateActiveTab(rows, scrollContainer, tabMap);
+      }, 100);
+    }
+  });
+
+  observer.observe(decadesModal, {
+    attributes: true,
+    attributeFilter: ["aria-hidden"],
+  });
+}
+
+/**
+ * Gets the position of an element relative to a scroll container
+ * @param {HTMLElement} element - The element to get position for
+ * @param {HTMLElement} scrollContainer - The scroll container
+ * @returns {number} - The top position relative to the scroll container
+ */
+function getPositionRelativeToContainer(element, scrollContainer) {
+  // Use getBoundingClientRect for more accurate positioning
+  const elementRect = element.getBoundingClientRect();
+  const containerRect = scrollContainer.getBoundingClientRect();
+  const containerScrollTop = scrollContainer.scrollTop;
+
+  // Calculate position relative to container's scroll position
+  return containerScrollTop + (elementRect.top - containerRect.top);
+}
+
+/**
+ * Gets the center position of a row relative to the scroll container
+ * @param {HTMLElement} row - The table row element
+ * @param {HTMLElement} scrollContainer - The scroll container
+ * @returns {number} - The center position relative to the scroll container
+ */
+function getRowCenter(row, scrollContainer) {
+  const rowTop = getPositionRelativeToContainer(row, scrollContainer);
+  return rowTop + row.offsetHeight / 2;
+}
+
+/**
+ * Scrolls to a specific table row
+ * @param {HTMLElement} row - The table row element to scroll to
+ * @param {Array<HTMLElement>} rows - Array of all table row elements
+ * @param {HTMLElement} scrollContainer - The scrollable container
+ * @param {Map} rowToTabMap - Map of row elements to tab buttons
+ */
+function scrollToRow(row, rows, scrollContainer, rowToTabMap) {
+  if (!row || !scrollContainer || !rows.length) return;
+
+  // Immediately highlight the clicked tab
+  const clickedTab = rowToTabMap.get(row);
+  if (clickedTab) {
+    // Clear all active states
+    rowToTabMap.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+    // Set clicked tab as active
+    clickedTab.classList.add("active");
+  }
+
+  const firstRow = rows[0];
+  const lastRow = rows[rows.length - 1];
+  const secondLastRow = rows.length >= 2 ? rows[rows.length - 2] : null;
+  const viewportHeight = scrollContainer.clientHeight;
+  let targetScroll;
+
+  if (row === firstRow) {
+    // Top row: scroll to very top
+    targetScroll = 0;
+  } else if (row === lastRow) {
+    // Bottom row: scroll to very bottom
+    targetScroll = scrollContainer.scrollHeight - viewportHeight;
+  } else if (row === secondLastRow) {
+    // Second-last row: scroll so row center is at 60% of viewport
+    const rowCenter = getRowCenter(row, scrollContainer);
+    targetScroll = rowCenter - viewportHeight * 0.6;
+  } else {
+    // All other rows: scroll so row center is at 40% of viewport
+    const rowCenter = getRowCenter(row, scrollContainer);
+    targetScroll = rowCenter - viewportHeight * 0.4;
+  }
+
+  // Ensure scroll position is within bounds
+  targetScroll = Math.max(0, Math.min(targetScroll, scrollContainer.scrollHeight - viewportHeight));
+
+  // Smooth scroll
+  scrollContainer.scrollTo({
+    top: targetScroll,
+    behavior: "smooth",
+  });
+
+  // Update active tab after scroll completes
+  setTimeout(() => {
+    updateActiveTab(rows, scrollContainer, rowToTabMap);
+  }, 500);
+}
+
+/**
+ * Updates which tab is highlighted based on scroll position
+ * @param {Array<HTMLElement>} rows - Array of all table row elements
+ * @param {HTMLElement} scrollContainer - The scrollable container
+ * @param {Map} rowToTabMap - Map of row elements to tab buttons
+ */
+function updateActiveTab(rows, scrollContainer, rowToTabMap) {
+  if (!rows.length || !scrollContainer) return;
+
+  const viewportTop = scrollContainer.scrollTop;
+  const viewportHeight = scrollContainer.clientHeight;
+  const viewportBottom = viewportTop + viewportHeight;
+  const scrollHeight = scrollContainer.scrollHeight;
+  const distanceFromBottom = scrollHeight - viewportBottom;
+
+  // Thresholds for detection
+  const topThreshold = 10; // Within 10px of top
+  const bottomThreshold = 10; // Within 10px of bottom
+  const detectionThreshold = 50; // Threshold for 40%/60% line detection
+
+  const isAtTop = viewportTop < topThreshold;
+  const isAtBottom = distanceFromBottom < bottomThreshold;
+  const targetLine40 = viewportTop + viewportHeight * 0.4;
+  const targetLine60 = viewportTop + viewportHeight * 0.6;
+
+  const firstRow = rows[0];
+  const lastRow = rows[rows.length - 1];
+  const secondLastRow = rows.length >= 2 ? rows[rows.length - 2] : null;
+
+  let activeRow = null;
+
+  // Top row: only when at top
+  if (isAtTop && firstRow) {
+    activeRow = firstRow;
+  }
+  // Bottom row: only when at bottom
+  else if (isAtBottom && lastRow) {
+    activeRow = lastRow;
+  }
+  // Second-last row: detect at 60% line
+  else if (secondLastRow) {
+    const rowCenter = getRowCenter(secondLastRow, scrollContainer);
+    if (Math.abs(rowCenter - targetLine60) < detectionThreshold) {
+      activeRow = secondLastRow;
+    }
+  }
+
+  // All other rows: detect at 40% line
+  if (!activeRow) {
+    let minDistance = Infinity;
+    rows.forEach((row) => {
+      // Skip first, last, and second-last rows (they're handled above)
+      if (row === firstRow || row === lastRow || row === secondLastRow) {
+        return;
+      }
+
+      const rowCenter = getRowCenter(row, scrollContainer);
+      const distance = Math.abs(rowCenter - targetLine40);
+      if (distance < minDistance) {
+        minDistance = distance;
+        activeRow = row;
+      }
+    });
+  }
+
+  // Fallback: if no row matched, find closest to 40% line (including special rows)
+  if (!activeRow) {
+    let minDistance = Infinity;
+    rows.forEach((row) => {
+      const rowCenter = getRowCenter(row, scrollContainer);
+      // Use 40% for all rows in fallback
+      const distance = Math.abs(rowCenter - targetLine40);
+      if (distance < minDistance) {
+        minDistance = distance;
+        activeRow = row;
+      }
+    });
+  }
+
+  // Update tab highlighting
+  rowToTabMap.forEach((tabButton, row) => {
+    if (row === activeRow) {
+      tabButton.classList.add("active");
+    } else {
+      tabButton.classList.remove("active");
+    }
+  });
+}
+
+// Initialize tabs when DOM is ready
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initializeDecadesTabs);
+} else {
+  initializeDecadesTabs();
+}
